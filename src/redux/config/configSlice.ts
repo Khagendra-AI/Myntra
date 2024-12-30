@@ -12,45 +12,58 @@ type ActionType = {
 };
 let initialState = {
   isLoading: false,
-  bag:[],
   count: 0,
   products: [],
-  gainersData: [],
-  loosersData: [],
   walletBalance: 0,
   watchlistdata: [],
   token: '',
   userDetail: {},
+  totalPrice: 0,
+  totaldiscountedPrice: 0,
 };
 const configSlice = createSlice({
   name: 'Config',
   initialState,
   reducers: {
-    
-    
     addWatchlist: (state: any, action) => {
       const data: any = action.payload;
 
       state.watchlistdata.push(data);
       console.log(state.watchlistdata, 'data addded');
     },
-    removeWatchlist: (state:any, action) => {
+    removeWatchlist: (state: any, action) => {
       const data = action.payload;
+      console.log(data, 'datadatadatadatadata');
+      // state.watchlistdata.pop(data);
+      const arr = state.watchlistdata.filter((ele, index) => index !== data);
+      console.log(arr, 'arrarrarr');
 
-      state.watchlistdata.pop(data);
+      state.watchlistdata = arr;
       console.log(state.watchlistdata, 'deleted');
     },
     addToBag: (state: any, action) => {
       const data: any = action.payload;
 
-      state.bag.push(data)
-      console.log(state.bag, 'data addded');
+      // console.log(action.payload,"data1")
+      // state.products=[]
+      state.products.push(data);
+      console.log(state.products, 'data addded');
     },
-    removeFromBag: (state:any, action) => {
+    removeFromBag: (state: any, action) => {
       const data = action.payload;
+      state.products.pop(data);
 
-      state.bag.pop(data);
-      console.log(state.bag, 'deleted');
+      console.log(state.products, 'deleted');
+    },
+    addPrice: (state: any, action) => {
+      console.log('chljaycyuftdse6sduyfc');
+      const data = action.payload;
+      state.totalPrice += data;
+      // console.log(state.totalPrice,"price")
+    },
+    adddiscountedPrice: (state: any, action) => {
+      const data = action.payload;
+      state.totaldiscountedPrice += data;
     },
     // // addLoginData: (state, action) => {
     // //   const data = action.payload;
@@ -102,18 +115,18 @@ const configSlice = createSlice({
   //     state.isLoading = false;
   //   });
 
-    // builder.addMatcher(
-    //   //return condition from this callback function
-    //   action => action.type.endsWith('/fulfilled'),
-    //   (state, action) => {
-    //     state.isLoading = false;
-    //     state.matched = true;
-    //   },
-    // );
-    // builder.addDefaultCase((state, action) => {
-    //  // console.log('default case', action);
-    //   state.isLoading = false;
-    // });
+  // builder.addMatcher(
+  //   //return condition from this callback function
+  //   action => action.type.endsWith('/fulfilled'),
+  //   (state, action) => {
+  //     state.isLoading = false;
+  //     state.matched = true;
+  //   },
+  // );
+  // builder.addDefaultCase((state, action) => {
+  //  // console.log('default case', action);
+  //   state.isLoading = false;
+  // });
   // },
 });
 // export const {getProducts} = configSlice.selectors;
@@ -127,6 +140,8 @@ export const {
   removeWatchlist,
   addToBag,
   removeFromBag,
+  addPrice,
+  adddiscountedPrice,
 } = configSlice.actions;
 
 export default configSlice.reducer;

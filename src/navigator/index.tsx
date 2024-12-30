@@ -7,6 +7,11 @@ import BottomNav from './RootNavigation';
 import Profile from '../screens/Profile';
 import ProductList from '../screens/ProductList';
 import ProductDetails from '../screens/ProductDetails';
+import Bag from '../screens/Bag';
+import WishList from '../screens/WishList';
+import LoginPage from '../screens/LoginPage';
+import CreateAccount from '../screens/CreateAccount';
+import ForgotPassword from '../screens/ForgotPassword';
 
 
 
@@ -34,6 +39,31 @@ export default function RootNavigation() {
          <Stack.Screen
           name="ProductDetails"
           component={ProductDetails}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Bag"
+          component={Bag}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="WishList"
+          component={WishList}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="LoginPage"
+          component={LoginPage}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="CreateAccount"
+          component={CreateAccount}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="ForgotPassword"
+          component={ForgotPassword}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

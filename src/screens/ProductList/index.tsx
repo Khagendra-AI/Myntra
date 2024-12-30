@@ -20,6 +20,12 @@ const ProductList = () => {
   const handlenav = item => {
     navigation.navigate('ProductDetails', {item});
   };
+  const navigateToWishList=()=>{
+    navigation.navigate("WishList")
+  }
+  const navigateToBag=()=>{
+    navigation.navigate("Bag")
+  }
 
   const[filteredItem,setFilteredItem]=useState([]);
 
@@ -59,7 +65,7 @@ const ProductList = () => {
   );
   return (
     <>
-    <SecondaryHeader/>
+    <SecondaryHeader navigateToWishList={navigateToWishList} navigateToBag={navigateToBag} headerText={tag}/>
       <View style={styles.container}>
         <FlatList
           numColumns={2}

@@ -9,7 +9,7 @@ import React from 'react';
 import styles from './styles';
 import {Icon} from '../../assets';
 
-const Header = ({navigateToProfile}:{navigateToProfile:any}) => {
+const Header = ({navigateToProfile,navigateToWishList}:{navigateToProfile:any,navigateToWishList:any}) => {
   return (
     
       <SafeAreaView style={styles.container}>
@@ -29,7 +29,9 @@ const Header = ({navigateToProfile}:{navigateToProfile:any}) => {
           </View>
           <View style={styles.rightUpperView}>
             <Image source={Icon.bell} style={styles.profileImage} />
+            <TouchableOpacity onPress={navigateToWishList}>
             <Image source={Icon.heart} style={styles.profileImage} />
+            </TouchableOpacity>
             <TouchableOpacity onPress={navigateToProfile}>
             <Image source={Icon.profile} style={styles.profileImage} />
             </TouchableOpacity>

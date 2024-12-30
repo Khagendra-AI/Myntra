@@ -2,7 +2,7 @@ import { Images } from "./src/assets";
 
 const data = [
   {
-    id: 1,
+    id: 'item_001',
     item_name: 'Slim Fit T-shirt',
     brand_name: 'UrbanStyle',
     ratings: {
@@ -17,7 +17,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 2,
+    id: 'item_002',
     item_name: 'Leather Jacket',
     brand_name: 'MotoX',
     ratings: {
@@ -32,7 +32,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 3,
+    id: 'item_003',
     item_name: 'Classic Blue Jeans',
     brand_name: 'DenimWorld',
     ratings: {
@@ -47,7 +47,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 4,
+    id: 'item_004',
     item_name: 'Floral Print Maxi Dress',
     brand_name: 'BelleMode',
     ratings: {
@@ -62,7 +62,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 5,
+    id: 'item_005',
     item_name: 'Cotton Hoodie',
     brand_name: 'StreetWear',
     ratings: {
@@ -77,7 +77,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 6,
+    id: 'item_006',
     item_name: 'Chunky Sneakers',
     brand_name: 'SneakerX',
     ratings: {
@@ -92,7 +92,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 7,
+    id: 'item_007',
     item_name: 'Leather Boots',
     brand_name: 'BootHaus',
     ratings: {
@@ -107,7 +107,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 8,
+    id: 'item_008',
     item_name: 'Plaid Flannel Shirt',
     brand_name: 'TartanWear',
     ratings: {
@@ -122,7 +122,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 9,
+    id: 'item_009',
     item_name: 'Skinny Fit Chinos',
     brand_name: 'ChinoCraft',
     ratings: {
@@ -137,7 +137,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 10,
+    id: 'item_010',
     item_name: 'V-neck Sweater',
     brand_name: 'KnitLux',
     ratings: {
@@ -152,7 +152,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 11,
+    id: 'item_011',
     item_name: 'Cargo Pants',
     brand_name: 'TacticalWear',
     ratings: {
@@ -167,7 +167,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 12,
+    id: 'item_012',
     item_name: 'Sunglasses',
     brand_name: 'RayVibe',
     ratings: {
@@ -182,7 +182,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 13,
+    id: 'item_013',
     item_name: 'Mini Skirt',
     brand_name: 'ChicEssentials',
     ratings: {
@@ -197,14 +197,13 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 14,
+    id: 'item_014',
     item_name: 'Denim Jacket',
     brand_name: 'DenimCraft',
     ratings: {
       average_rating: 4.5,
       total_reviews: 1500
     },
-
     price: 39.99,
     discount: 10,
     discounted_price: 35.99,
@@ -213,7 +212,7 @@ const data = [
     cat:'shirts'
   },
   {
-    id: 15,
+    id: 'item_015',
     item_name: 'Slim Fit Jeans',
     brand_name: 'UrbanStyle',
     ratings: {
@@ -224,10 +223,11 @@ const data = [
     discount: 15,
     discounted_price: 21.24,
     product_description: 'Comfortable and breathable slim-fit Jeans made of 100% cotton. Perfect for casual outings.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 16,
+    id: 'item_016',
     item_name: 'Leather Jeans',
     brand_name: 'MotoX',
     ratings: {
@@ -238,10 +238,11 @@ const data = [
     discount: 20,
     discounted_price: 143.99,
     product_description: 'Premium leather Jeans with a classic biker design, featuring durable stitching and stylish zippers.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 17,
+    id: 'item_017',
     item_name: 'Classic Blue Jeans',
     brand_name: 'DenimWorld',
     ratings: {
@@ -252,10 +253,11 @@ const data = [
     discount: 10,
     discounted_price: 44.99,
     product_description: 'Timeless blue jeans with a regular fit and stretchable fabric for all-day comfort.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 18,
+    id: 'item_018',
     item_name: 'Floral Print Jeans Dress',
     brand_name: 'BelleMode',
     ratings: {
@@ -266,10 +268,11 @@ const data = [
     discount: 30,
     discounted_price: 41.99,
     product_description: 'Elegant floral print Jeans dress, perfect for summer parties and casual outings. Lightweight and flowy.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 19,
+    id: 'item_019',
     item_name: 'Cotton Jeans',
     brand_name: 'StreetWear',
     ratings: {
@@ -280,10 +283,11 @@ const data = [
     discount: 15,
     discounted_price: 33.99,
     product_description: 'Soft cotton Jeans with a relaxed fit and adjustable drawstring for a casual and cozy look.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 20,
+    id: 'item_020',
     item_name: 'Chunky Jeans',
     brand_name: 'SneakerX',
     ratings: {
@@ -294,10 +298,11 @@ const data = [
     discount: 10,
     discounted_price: 80.99,
     product_description: 'Fashion-forward chunky Jeans with a vibrant color palette and comfortable cushioned sole.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 21,
+    id: 'item_021',
     item_name: 'Leather Jeans',
     brand_name: 'BootHaus',
     ratings: {
@@ -308,10 +313,11 @@ const data = [
     discount: 25,
     discounted_price: 97.49,
     product_description: 'High-quality leather Jeans designed for both style and comfort. Features a sturdy sole and sleek finish.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 22,
+    id: 'item_022',
     item_name: 'Plaid Flannel Jeans',
     brand_name: 'TartanWear',
     ratings: {
@@ -322,10 +328,11 @@ const data = [
     discount: 20,
     discounted_price: 23.99,
     product_description: 'Cozy plaid flannel Jeans with a button-down front and chest pocket. Ideal for layering or wearing solo.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 23,
+    id: 'item_023',
     item_name: 'Skinny Fit Jeans',
     brand_name: 'ChinoCraft',
     ratings: {
@@ -336,10 +343,11 @@ const data = [
     discount: 10,
     discounted_price: 44.99,
     product_description: 'Slim-fitting Jeans made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 24,
+    id: 'item_024',
     item_name: 'V-neck Jeans',
     brand_name: 'KnitLux',
     ratings: {
@@ -350,10 +358,11 @@ const data = [
     discount: 20,
     discounted_price: 31.99,
     product_description: 'Soft and warm V-neck Jeans made of high-quality wool, perfect for layering during colder months.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 25,
+    id: 'item_025',
     item_name: 'Cargo Jeans',
     brand_name: 'TacticalWear',
     ratings: {
@@ -364,10 +373,11 @@ const data = [
     discount: 10,
     discounted_price: 53.99,
     product_description: 'Durable cargo Jeans with multiple pockets, designed for functionality and everyday wear.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 26,
+    id: 'item_026',
     item_name: 'Jeans',
     brand_name: 'RayVibe',
     ratings: {
@@ -378,10 +388,11 @@ const data = [
     discount: 15,
     discounted_price: 42.49,
     product_description: 'Stylish Jeans with UV protection and a sleek design, perfect for summer outings.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 27,
+    id: 'item_027',
     item_name: 'Mini Jeans',
     brand_name: 'ChicEssentials',
     ratings: {
@@ -392,24 +403,24 @@ const data = [
     discount: 25,
     discounted_price: 22.49,
     product_description: 'Flirty mini Jeans with a high-waisted design, perfect for casual and semi-formal occasions.',
-    item_photo: Images.jeans,    cat:'jeans'
+    item_photo: Images.jeans,    
+    cat:'jeans'
   },
   {
-    id: 28,
+    id: 'item_028',
     item_name: 'Denim Jeans',
     brand_name: 'DenimCraft',
     ratings: {
       average_rating: 4.5,
       total_reviews: 1500
     },
-
     price: 39.99,
     discount: 10,
     discounted_price: 35.99,
     product_description: 'Trendy cropped Jeans with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
-    item_photo: Images.jeans,
+    item_photo: Images.jeans,    
     cat:'jeans'
   }
-
 ]
+
 export default data;

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   emptycartImage:{
     alignSelf:'center',
-    height:'37.5%',
+    height:'41%',
     width:'45%',
   },
   subheadingEmpty:{

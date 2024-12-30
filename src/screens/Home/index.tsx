@@ -13,12 +13,15 @@ const Home = ({navigation}:{navigation:any}) => {
   const navigateToProfile = () => {
     navigation.navigate("Profile")
   };
+  const navigateToWishList=()=>{
+    navigation.navigate("WishList")
+  }
   // const navigateToProductList=()=>{
   //   navigation.navigate("ProductList")
   // }
   return (
     <>
-      <Header navigateToProfile={navigateToProfile}/>
+      <Header navigateToProfile={navigateToProfile} navigateToWishList={navigateToWishList}/>
       <ScrollView style={styles.container}>
         <FirstHFlatList/>
         <SecondHFlatList/>

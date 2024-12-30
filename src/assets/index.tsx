@@ -17,6 +17,16 @@ const Icon = {
   secure: require('./icons/secure.png'),
   cod: require('./icons/cod.png'),
   return: require('./icons/return.png'),
+  close: require('./icons/close.png'),
+  favorite: require('./icons/favorite.png'),
+  profile2: require('./icons/profile2.png'),
+  order: require('./icons/order.png'),
+  next: require('./icons/next.png'),
+  qr: require('./icons/qr.png'),
+  support: require('./icons/support.png'),
+  eye: require('./icons/eye.png'),
+  eyeoff: require('./icons/eyeoff.png'),
+
 
 };
 const Images = {

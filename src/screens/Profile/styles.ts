@@ -3,6 +3,7 @@ const SCREEN_HEIGHT = Dimensions.get('screen').height;
 const SCREEN_WIDTH = Dimensions.get('screen').width;
 const styles = StyleSheet.create({
   container:{
+    backgroundColor:'#f8f9f9',
     flex:1,
   },
   header:{},
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
   topView:{},
   blackView:{
     width:SCREEN_WIDTH,
-    backgroundColor:'black',
+    backgroundColor:'#36454F',
     height:SCREEN_HEIGHT*.15,
     },
   whiteView:{
@@ -34,7 +35,26 @@ const styles = StyleSheet.create({
   loginText:{
     color:'white'
   },
-  profileImageView:{},
+  profileImageView:{
+    borderRadius:4,
+    width:SCREEN_WIDTH*.35,
+    height:SCREEN_HEIGHT*.15,
+    backgroundColor:'white',
+    borderWidth:.5,
+    borderColor:'grey',
+    position:'absolute',
+    top:'30%',
+    left:'9%',
+    zIndex:1,
+    alignItems:'center',
+    justifyContent:'center'
+  },
+  profileImage:{
+    resizeMode:'contain',
+    height:SCREEN_HEIGHT*.09,
+    width:SCREEN_WIDTH*.29,
+
+  },
   backImage:{
   height:20,
   width:20,
@@ -44,6 +64,21 @@ profileText:{
   color:'grey',
   fontWeight:'600',
   marginHorizontal:'5%',
+},
+orderView:{
+  marginVertical:'5%',
+},
+couponView:{},
+FAQView:{
+  marginTop:'5%',
+  backgroundColor:'white',
+  paddingHorizontal:'10%',
+  paddingTop:'5%',
+},
+FAQText:{
+  marginVertical:10,
+  fontWeight:'600',
+  color:'grey',
 },
 
 })
