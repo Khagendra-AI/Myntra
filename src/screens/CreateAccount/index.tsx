@@ -65,7 +65,9 @@ const CreateAccount = ({ navigation }: any) => {
           email: email,
           phone: phone, 
           cart:[],
-          favourites:[]
+          favourites:[],
+          price:0,
+          disprice:0,
         })
         .then(() => {
           console.log('User data successfully written!');

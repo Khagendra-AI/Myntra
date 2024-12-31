@@ -86,6 +86,8 @@ const configSlice = createSlice({
       // console.log(data.favourites,"favourites")
       state.watchlistdata=data.favourites;
       state.products=data.cart;
+      state.totalPrice=data.price;
+      state.totaldiscountedPrice=data.disprice
       
     },
     removeUserData: (state, action) => {
@@ -95,6 +97,8 @@ const configSlice = createSlice({
       // console.log(data.favourites,"favourites")
       state.watchlistdata=[];
       state.products=[];
+      state.totalPrice=0;
+      state.totaldiscountedPrice=0;
     },
     removeLoginToken: (state, action) => {
       console.log('chl gyaa how');

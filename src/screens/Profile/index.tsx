@@ -19,9 +19,14 @@ import firestore from '@react-native-firebase/firestore';
 import {removeLoginToken, removeUserData} from '../../redux/config/configSlice';
 const Profile = ({navigation}: {navigation: any}) => {
   const dispatch = useDispatch();
-  const {token, products, watchlistdata,userDetail,} = useSelector(
-    (store: any) => store.mainapi,
-  );
+  const {
+    token,
+    products,
+    watchlistdata,
+    userDetail,
+    totalPrice,
+    totaldiscountedPrice,
+  } = useSelector((store: any) => store.mainapi);
   console.log(userDetail, 'gdsxzv');
   const handleLogout = async () => {
     try {
@@ -37,6 +42,8 @@ const Profile = ({navigation}: {navigation: any}) => {
           {
             favourites: watchlistdata || [],
             cart: products || [],
+            disprice: totaldiscountedPrice,
+            price: totalPrice,
           },
           {merge: true},
         )

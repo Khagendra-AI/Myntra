@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 const PriceDetails = () => {
   const {products, totalPrice,totaldiscountedPrice} = useSelector((store: any) => store.mainapi);
   const discount=totalPrice-totaldiscountedPrice
+  console.log(totalPrice)
   return (
     <View style={styles.container}>
       <View style={styles.commonView}>
