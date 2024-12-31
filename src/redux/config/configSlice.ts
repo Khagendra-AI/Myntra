@@ -27,6 +27,7 @@ const configSlice = createSlice({
   reducers: {
     addWatchlist: (state: any, action) => {
       const data: any = action.payload;
+      console.log('watchlist-->', data);
 
       state.watchlistdata.push(data);
       console.log(state.watchlistdata, 'data addded');
@@ -51,8 +52,8 @@ const configSlice = createSlice({
     },
     removeFromBag: (state: any, action) => {
       const data = action.payload;
-      state.products.pop(data);
-
+      const arr = state.products.filter((ele, index) => index !== data);
+      state.products = arr;
       console.log(state.products, 'deleted');
     },
     addPrice: (state: any, action) => {
@@ -72,33 +73,35 @@ const configSlice = createSlice({
     // //   state.username = data.name;
 
     // // },
-    // addLoginToken: (state, action) => {
-    //   console.log('chl gyaa how');
-    //   const data = action.payload;
-    //   console.log(data, '+++');
-    //   state.token = data;
-    // },
-    // addUserData: (state, action) => {
-    //   const data = action.payload;
-    //   console.log(data, '+++');
-    //   state.userDetail = data;
-    //   // console.log(data.favourites,"favourites")
-    //   state.watchlistdata=data.favourites;
-    //   state.walletBalance=data.walletBalance || 0;
-    // },
-    // removeUserData: (state, action) => {
-    //   const data = action.payload;
-    //   // console.log(data, '+++');
-    //   state.userDetail = "";
-    //   // console.log(data.favourites,"favourites")
-    //   state.watchlistdata=[];
-    // },
-    // removeLoginToken: (state, action) => {
-    //   console.log('chl gyaa how');
-    //   const data = action.payload;
-    //   console.log(data, '+++');
-    //   state.token = data;
-    // },
+    addLoginToken: (state, action) => {
+      console.log('chl gyaa how');
+      const data = action.payload;
+      console.log(data, '+++');
+      state.token = data;
+    },
+    addUserData: (state, action) => {
+      const data = action.payload;
+      console.log(data, '+++');
+      state.userDetail = data;
+      // console.log(data.favourites,"favourites")
+      state.watchlistdata=data.favourites;
+      state.products=data.cart;
+      
+    },
+    removeUserData: (state, action) => {
+      const data = action.payload;
+      // console.log(data, '+++');
+      state.userDetail = "";
+      // console.log(data.favourites,"favourites")
+      state.watchlistdata=[];
+      state.products=[];
+    },
+    removeLoginToken: (state, action) => {
+      console.log('chl gyaa how');
+      const data = action.payload;
+      console.log(data, '+++');
+      state.token = data;
+    },
   },
   // extraReducers: builder => {
   //   builder.addCase(getProductsAction.pending, state => {
@@ -142,6 +145,10 @@ export const {
   removeFromBag,
   addPrice,
   adddiscountedPrice,
+  addUserData,
+  addLoginToken,
+  removeLoginToken,
+  removeUserData,
 } = configSlice.actions;
 
 export default configSlice.reducer;

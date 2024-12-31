@@ -13,7 +13,9 @@ import {
 import { useDispatch } from 'react-redux';
 import { styles } from './styles';
 import { Icon } from '../../assets';
-
+import { addLoginToken, addUserData } from '../../redux/config/configSlice';
+import auth, { firebase } from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
 
 const LoginPage = ({navigation}: any) => {
   const dispatch = useDispatch<any>();
@@ -24,51 +26,45 @@ const LoginPage = ({navigation}: any) => {
 
 
    const handleLogin = async () => {
-  //   setloading(true)
-  //   try {
-  //     const userCredential = await auth().signInWithEmailAndPassword(
-  //       email,
-  //       password,
-  //     );
-  //     const user = userCredential.user;
+    setloading(true)
+    try {
+      const userCredential = await auth().signInWithEmailAndPassword(
+        email,
+        password,
+      );
+      const user = userCredential.user;
 
-  //     dispatch(addLoginToken(user?.uid));
-  //     const usersRef = firestore().collection('users').doc(user?.uid);
+      dispatch(addLoginToken(user?.uid));
+      const usersRef = firestore().collection('users').doc(user?.uid);
 
-  //     usersRef
-  //     .get()
-  //     .then(documentSnapshot => {
-  //       setloading(false)
-  //       if (documentSnapshot.exists) {
+      usersRef
+      .get()
+      .then(documentSnapshot => {
+        setloading(false)
+        if (documentSnapshot.exists) {
 
-  //         // console.log('usersRef', documentSnapshot);
-  //         // setUserData(documentSnapshot.data());
-  //         dispatch(addUserData(documentSnapshot.data()));
-  //         console.log(documentSnapshot.data(),"home snapshop")
-  //       } else {
-  //         console.log('No such document!');
-  //       }
-  //     })
-  //     .catch(error => {
-  //       setloading(false)
-  //       //false
-  //       console.error('Error getting document:', error);
-  //     });
-  //     dispatch(getProductsAction())
-  //       .unwrap()
-  //       .then(() => {
-  //         navigation.reset({
-  //           index: 0,
-  //           routes: [{name: 'BottomNav'}],
-  //         });
-  //       })
-  //       .catch(({err}: any) => {
-  //         console.error('Error fetching products', err);
-  //       });
-  //   } catch (error) {
-  //     setloading(false)
-  //     Alert.alert('Login Error', 'Something went wrong. Please try again.');
-  //   }
+          // console.log('usersRef', documentSnapshot);
+          // setUserData(documentSnapshot.data());
+          dispatch(addUserData(documentSnapshot.data()));
+          navigation.reset({
+            index: 0,
+            routes: [{name: 'BottomNav'}],
+          });
+          console.log(documentSnapshot.data(),"home snapshop")
+        } else {
+          console.log('No such document!');
+        }
+      })
+      .catch(error => {
+        setloading(false)
+        //false
+        console.error('Error getting document:', error);
+      });
+     
+    } catch (error) {
+      setloading(false)
+      Alert.alert('Login Error', 'Something went wrong. Please try again.');
+    }
   };
 
   const isButtonDisabled = !email.trim() || !password.trim();

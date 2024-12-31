@@ -80,6 +80,53 @@ FAQText:{
   fontWeight:'600',
   color:'grey',
 },
+infoView:{
+  alignItems:'center',
+},
+nameText:{
+  marginTop:'4%',
+  fontSize:18,
+  fontWeight:'500',
+  color:'black'
+},
+numberText:{
+  marginTop:5,
+  color:'black'
+},
+mailText:{
+  marginTop:5,
+  color:'grey',
+},
+accountView:{
+  marginTop:'10%',
+},
+accountText:{
+  fontWeight:'500',
+  fontSize:17,
+  color:'white'
+},
+accountsubText:{
+  marginVertical:4,
+  color:'grey',
+},
+accountTiles:{},
+normalTiles:{
+  marginTop:'3%',
+},
+logoutText:{
+  color:'red',
+  fontWeight:'600',
+},
+touchableLogout:{
+  alignSelf:'center',
+  borderWidth:1,
+  borderColor:'red',
+  padding:20,
+  width:SCREEN_WIDTH*.9,
+  backgroundColor:"#f8f9f9",
+  alignItems:'center',
+  marginVertical:'5%',
+},
 
 })
 export default styles

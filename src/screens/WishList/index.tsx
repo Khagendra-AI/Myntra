@@ -48,7 +48,7 @@ const WishList = ({navigation}) => {
         </TouchableOpacity>
       </View>
      </View>
-     {watchlistdata.length ==0 ? <View></View> :
+     {watchlistdata?.length ==0 ? <View></View> :
      <View style={styles.upperFlatView}>
       <View style={styles.flatlistView}>
          <FlatList

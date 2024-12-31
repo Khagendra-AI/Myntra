@@ -38,6 +38,7 @@ const ProductDetails = ({navigation}) => {
       setstarred(false);
     }
     else{
+      console.log('route-->', route)
       dispatch(addWatchlist(route.params.item));
       setstarred(true);
     }
@@ -113,10 +114,12 @@ const ProductDetails = ({navigation}) => {
         <Delivery />
       </ScrollView>
       <View style={styles.footerView}>
+
         <TouchableOpacity style={styles.wishlistView} onPress={onWishListPress}>
           <Image source={starred ? Icon.favorite : Icon.heart} style={styles.heartImage} />
           <Text style={styles.wishlistText}>WishList</Text>
         </TouchableOpacity>
+
         <TouchableOpacity style={styles.addbagView} onPress={onBagPress}>
           <Image
             source={Icon.Bag}

@@ -10,6 +10,9 @@ import {
 
 import styles from './styles';
 import { Icon } from '../../assets';
+import auth, { firebase } from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
+
 
 
 const CreateAccount = ({ navigation }: any) => {
@@ -47,46 +50,48 @@ const CreateAccount = ({ navigation }: any) => {
   };
 
   const handleCreateAccount = async () => {
-    // try {
-    //   const userCredential = await auth().createUserWithEmailAndPassword(
-    //     email,
-    //     password,
-    //   );
-    //   // console.log(userCredential.user,"///")
-    //   if (userCredential) {
-    //     const userId = userCredential.user.uid
-    //     const usersRef = firebase.firestore().collection('users');
+    try {
+      const userCredential = await auth().createUserWithEmailAndPassword(
+        email,
+        password,
+      );
+      // console.log(userCredential.user,"///")
+      if (userCredential) {
+        const userId = userCredential.user.uid
+        const usersRef = firebase.firestore().collection('users');
     
-    //     usersRef.doc(userId).set({
-    //       name: name,
-    //       email: email,
-    //       phone: phone, 
-    //     })
-    //     .then(() => {
-    //       console.log('User data successfully written!');
-    //     })
-    //     .catch(error => {
-    //       console.error('Error writing document:', error);
-    //     });
-    //   } else {
-    //     // User is signed out
-    //   }
-    //   // const userRef = firestore().collection('users'); 
-    //   // await userRef.add({
-    //   //   name: name,
-    //   //   email: email,    
-    //   //   createdAt: firestore.FieldValue.serverTimestamp(),
-    //   // });
+        usersRef.doc(userId).set({
+          name: name,
+          email: email,
+          phone: phone, 
+          cart:[],
+          favourites:[]
+        })
+        .then(() => {
+          console.log('User data successfully written!');
+        })
+        .catch(error => {
+          console.error('Error writing document:', error);
+        });
+      } else {
+        // User is signed out
+      }
+      // const userRef = firestore().collection('users'); 
+      // await userRef.add({
+      //   name: name,
+      //   email: email,    
+      //   createdAt: firestore.FieldValue.serverTimestamp(),
+      // });
 
-    //   console.log('Account created for user:', userCredential.user);
-    //   navigation.navigate('LoginPage');
-    // } catch (err: any) {
-    //   Alert.alert(
-    //     'Account Creation Failed',
-    //     err.message || 'An error occurred while creating your account. Please try again.',
-    //     [{ text: 'OK' }],
-    //   );
-    // }
+      console.log('Account created for user:', userCredential.user);
+      navigation.navigate('LoginPage');
+    } catch (err: any) {
+      Alert.alert(
+        'Account Creation Failed',
+        err.message || 'An error occurred while creating your account. Please try again.',
+        [{ text: 'OK' }],
+      );
+    }
   };
 
   return (

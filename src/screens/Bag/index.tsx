@@ -11,6 +11,7 @@ const Bag = ({navigation}) => {
   const dispatch=useDispatch()
   
   const {products} = useSelector((store: any) => store.mainapi);
+  console.log(products,"rd")
   const renderItem = ({item, index}: {item: any; index: any}) => (
     <BagCard
       image={item.item_photo}
@@ -44,7 +45,7 @@ const Bag = ({navigation}) => {
         </TouchableOpacity>
       </View>
      </View>
-     {products.length ==0 ? <View style={styles.emptycartView}>
+     {products?.length ==0 ? <View style={styles.emptycartView}>
      <Image
      source={Images.emptycart}
      style={styles.emptycartImage}
@@ -61,7 +62,10 @@ const Bag = ({navigation}) => {
       />
       <PriceDetails/>
       </ScrollView>
-      }
+}
+
+      
+      
     </SafeAreaView>
   )
 }
