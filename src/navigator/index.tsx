@@ -12,6 +12,7 @@ import WishList from '../screens/WishList';
 import LoginPage from '../screens/LoginPage';
 import CreateAccount from '../screens/CreateAccount';
 import ForgotPassword from '../screens/ForgotPassword';
+import Minis from '../screens/Minis';
 
 
 
@@ -64,6 +65,11 @@ export default function RootNavigation() {
          <Stack.Screen
           name="ForgotPassword"
           component={ForgotPassword}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="Minis"
+          component={Minis}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

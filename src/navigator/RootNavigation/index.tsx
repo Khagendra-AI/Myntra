@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Home from '../../screens/Home';
 import Minis from '../../screens/Minis';
 import Trends from '../../screens/Trends';
@@ -11,6 +11,7 @@ import {Icon} from '../../assets';
 const Tab = createBottomTabNavigator();
 
 export default function BottomNav() {
+  const navigation=useNavigation()
   return (
    
       <Tab.Navigator
@@ -38,18 +39,24 @@ export default function BottomNav() {
             ),
           }}
         />
-        <Tab.Screen
+        <Tab.Screen 
           name="Minis"
           component={Minis}
           options={{
+            tabBarStyle:{
+              display:'none'
+            },
             tabBarIcon: ({color, size}) => (
+            
               <Image
+              
                 source={Icon.Minis}
                 style={[
                   styles.icon,
                   {tintColor: color, width: size, height: size},
                 ]}
               />
+             
             ),
           }}
         />

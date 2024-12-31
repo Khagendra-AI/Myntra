@@ -7,9 +7,17 @@ import SlidingBanner from '../../components/SlidingBanner';
 import ProductList from '../ProductList';
 import FirstHFlatList from '../../components/FirstHFlatList';
 import SecondHFlatList from '../../components/SecondHFlatList';
-
+import Banner from '../../components/Banner';
+const data = [
+  require('../../assets/images/jeans.jpg'),
+  require('../../assets/images/jeans.jpg'),
+  require('../../assets/images/jeans.jpg'),
+  require('../../assets/images/jeans.jpg'),
+  require('../../assets/images/jeans.jpg'),
+];
 
 const Home = ({navigation}:{navigation:any}) => {
+
   const navigateToProfile = () => {
     navigation.navigate("Profile")
   };
@@ -26,7 +34,9 @@ const Home = ({navigation}:{navigation:any}) => {
         <FirstHFlatList/>
         <SecondHFlatList/>
         {/* <ProductList/> */}
+        {/* <Banner adData={data}/> */}
         <ContinueBrowsing heading={'Joyful Savings To Bag'} />
+        
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
