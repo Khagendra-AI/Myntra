@@ -1,4 +1,4 @@
-import { Images } from "./src/assets";
+import {Images} from './src/assets';
 
 const data = [
   {
@@ -7,104 +7,111 @@ const data = [
     brand_name: 'UrbanStyle',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 1024
+      total_reviews: 1024,
     },
     price: 24.99,
     discount: 15,
     discounted_price: 21.24,
-    product_description: 'Comfortable and breathable slim-fit T-shirt made of 100% cotton. Perfect for casual outings.',
+    product_description:
+      'Comfortable and breathable slim-fit T-shirt made of 100% cotton. Perfect for casual outings.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_002',
-    item_name: 'Leather Jacket',
+    item_name: 'Leather tshirt',
     brand_name: 'MotoX',
     ratings: {
       average_rating: 4.7,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 179.99,
     discount: 20,
     discounted_price: 143.99,
-    product_description: 'Premium leather jacket with a classic biker design, featuring durable stitching and stylish zippers.',
+    product_description:
+      'Premium leather tshirt with a classic biker design, featuring durable stitching and stylish zippers.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_003',
-    item_name: 'Classic Blue Jeans',
+    item_name: 'Classic Blue tshirt',
     brand_name: 'DenimWorld',
     ratings: {
       average_rating: 4.3,
-      total_reviews: 500
+      total_reviews: 500,
     },
     price: 49.99,
     discount: 10,
     discounted_price: 44.99,
-    product_description: 'Timeless blue jeans with a regular fit and stretchable fabric for all-day comfort.',
+    product_description:
+      'Timeless blue tshirt with a regular fit and stretchable fabric for all-day comfort.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_004',
-    item_name: 'Floral Print Maxi Dress',
+    item_name: 'Floral Print tshirt Dress',
     brand_name: 'BelleMode',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 1223
+      total_reviews: 1223,
     },
     price: 59.99,
     discount: 30,
     discounted_price: 41.99,
-    product_description: 'Elegant floral print maxi dress, perfect for summer parties and casual outings. Lightweight and flowy.',
+    product_description:
+      'Elegant floral print tshirt dress, perfect for summer parties and casual outings. Lightweight and flowy.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_005',
-    item_name: 'Cotton Hoodie',
+    item_name: 'Cotton tshirt',
     brand_name: 'StreetWear',
     ratings: {
       average_rating: 4.4,
-      total_reviews: 1025
+      total_reviews: 1025,
     },
     price: 39.99,
     discount: 15,
     discounted_price: 33.99,
-    product_description: 'Soft cotton hoodie with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    product_description:
+      'Soft cotton tshirt with a relaxed fit and adjustable drawstring for a casual and cozy look.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_006',
-    item_name: 'Chunky Sneakers',
+    item_name: 'Chunky tshirt',
     brand_name: 'SneakerX',
     ratings: {
       average_rating: 4.7,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 89.99,
     discount: 10,
     discounted_price: 80.99,
-    product_description: 'Fashion-forward chunky sneakers with a vibrant color palette and comfortable cushioned sole.',
+    product_description:
+      'Fashion-forward chunky tshirt with a vibrant color palette and comfortable cushioned sole.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_007',
-    item_name: 'Leather Boots',
+    item_name: 'Leather tshirt',
     brand_name: 'BootHaus',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 2000
+      total_reviews: 2000,
     },
     price: 129.99,
     discount: 25,
     discounted_price: 97.49,
-    product_description: 'High-quality leather boots designed for both style and comfort. Features a sturdy sole and sleek finish.',
+    product_description:
+      'High-quality leather tshirt designed for both style and comfort. Features a sturdy sole and sleek finish.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_008',
@@ -112,104 +119,111 @@ const data = [
     brand_name: 'TartanWear',
     ratings: {
       average_rating: 4.3,
-      total_reviews: 1345
+      total_reviews: 1345,
     },
     price: 29.99,
     discount: 20,
     discounted_price: 23.99,
-    product_description: 'Cozy plaid flannel shirt with a button-down front and chest pocket. Ideal for layering or wearing solo.',
+    product_description:
+      'Cozy plaid flannel shirt with a button-down front and chest pocket. Ideal for layering or wearing solo.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_009',
-    item_name: 'Skinny Fit Chinos',
+    item_name: 'Skinny Fit tshirt',
     brand_name: 'ChinoCraft',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 859
+      total_reviews: 859,
     },
     price: 49.99,
     discount: 10,
     discounted_price: 44.99,
-    product_description: 'Slim-fitting chinos made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    product_description:
+      'Slim-fitting tshirt made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_010',
-    item_name: 'V-neck Sweater',
+    item_name: 'V-neck tshirt',
     brand_name: 'KnitLux',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 723
+      total_reviews: 723,
     },
     price: 39.99,
     discount: 20,
     discounted_price: 31.99,
-    product_description: 'Soft and warm V-neck sweater made of high-quality wool, perfect for layering during colder months.',
+    product_description:
+      'Soft and warm V-neck tshirt made of high-quality wool, perfect for layering during colder months.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_011',
-    item_name: 'Cargo Pants',
+    item_name: 'Cargo tshirt',
     brand_name: 'TacticalWear',
     ratings: {
       average_rating: 4.4,
-      total_reviews: 980
+      total_reviews: 980,
     },
     price: 59.99,
     discount: 10,
     discounted_price: 53.99,
-    product_description: 'Durable cargo pants with multiple pockets, designed for functionality and everyday wear.',
+    product_description:
+      'Durable cargo tshirt with multiple pockets, designed for functionality and everyday wear.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_012',
-    item_name: 'Sunglasses',
+    item_name: 'tshirt',
     brand_name: 'RayVibe',
     ratings: {
       average_rating: 4.8,
-      total_reviews: 1980
+      total_reviews: 1980,
     },
     price: 49.99,
     discount: 15,
     discounted_price: 42.49,
-    product_description: 'Stylish sunglasses with UV protection and a sleek design, perfect for summer outings.',
+    product_description:
+      'Stylish tshirt with UV protection and a sleek design, perfect for summer outings.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_013',
-    item_name: 'Mini Skirt',
+    item_name: 'Mini tshirt',
     brand_name: 'ChicEssentials',
     ratings: {
       average_rating: 4.2,
-      total_reviews: 560
+      total_reviews: 560,
     },
     price: 29.99,
     discount: 25,
     discounted_price: 22.49,
-    product_description: 'Flirty mini skirt with a high-waisted design, perfect for casual and semi-formal occasions.',
+    product_description:
+      'Flirty mini tshirt with a high-waisted design, perfect for casual and semi-formal occasions.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_014',
-    item_name: 'Denim Jacket',
+    item_name: 'Denim tshirt',
     brand_name: 'DenimCraft',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 39.99,
     discount: 10,
     discounted_price: 35.99,
-    product_description: 'Trendy cropped sweater with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    product_description:
+      'Trendy cropped tshirt with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
     item_photo: Images.boy,
-    cat:'shirts'
+    cat: 'shirts',
   },
   {
     id: 'item_015',
@@ -217,14 +231,15 @@ const data = [
     brand_name: 'UrbanStyle',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 1024
+      total_reviews: 1024,
     },
     price: 24.99,
     discount: 15,
     discounted_price: 21.24,
-    product_description: 'Comfortable and breathable slim-fit Jeans made of 100% cotton. Perfect for casual outings.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Comfortable and breathable slim-fit Jeans made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_016',
@@ -232,14 +247,15 @@ const data = [
     brand_name: 'MotoX',
     ratings: {
       average_rating: 4.7,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 179.99,
     discount: 20,
     discounted_price: 143.99,
-    product_description: 'Premium leather Jeans with a classic biker design, featuring durable stitching and stylish zippers.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Premium leather Jeans with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_017',
@@ -247,14 +263,15 @@ const data = [
     brand_name: 'DenimWorld',
     ratings: {
       average_rating: 4.3,
-      total_reviews: 500
+      total_reviews: 500,
     },
     price: 49.99,
     discount: 10,
     discounted_price: 44.99,
-    product_description: 'Timeless blue jeans with a regular fit and stretchable fabric for all-day comfort.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Timeless blue jeans with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_018',
@@ -262,14 +279,15 @@ const data = [
     brand_name: 'BelleMode',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 1223
+      total_reviews: 1223,
     },
     price: 59.99,
     discount: 30,
     discounted_price: 41.99,
-    product_description: 'Elegant floral print Jeans dress, perfect for summer parties and casual outings. Lightweight and flowy.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Elegant floral print Jeans dress, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_019',
@@ -277,14 +295,15 @@ const data = [
     brand_name: 'StreetWear',
     ratings: {
       average_rating: 4.4,
-      total_reviews: 1025
+      total_reviews: 1025,
     },
     price: 39.99,
     discount: 15,
     discounted_price: 33.99,
-    product_description: 'Soft cotton Jeans with a relaxed fit and adjustable drawstring for a casual and cozy look.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Soft cotton Jeans with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_020',
@@ -292,14 +311,15 @@ const data = [
     brand_name: 'SneakerX',
     ratings: {
       average_rating: 4.7,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 89.99,
     discount: 10,
     discounted_price: 80.99,
-    product_description: 'Fashion-forward chunky Jeans with a vibrant color palette and comfortable cushioned sole.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Fashion-forward chunky Jeans with a vibrant color palette and comfortable cushioned sole.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_021',
@@ -307,14 +327,15 @@ const data = [
     brand_name: 'BootHaus',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 2000
+      total_reviews: 2000,
     },
     price: 129.99,
     discount: 25,
     discounted_price: 97.49,
-    product_description: 'High-quality leather Jeans designed for both style and comfort. Features a sturdy sole and sleek finish.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'High-quality leather Jeans designed for both style and comfort. Features a sturdy sole and sleek finish.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_022',
@@ -322,14 +343,15 @@ const data = [
     brand_name: 'TartanWear',
     ratings: {
       average_rating: 4.3,
-      total_reviews: 1345
+      total_reviews: 1345,
     },
     price: 29.99,
     discount: 20,
     discounted_price: 23.99,
-    product_description: 'Cozy plaid flannel Jeans with a button-down front and chest pocket. Ideal for layering or wearing solo.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Cozy plaid flannel Jeans with a button-down front and chest pocket. Ideal for layering or wearing solo.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_023',
@@ -337,14 +359,15 @@ const data = [
     brand_name: 'ChinoCraft',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 859
+      total_reviews: 859,
     },
     price: 49.99,
     discount: 10,
     discounted_price: 44.99,
-    product_description: 'Slim-fitting Jeans made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Slim-fitting Jeans made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_024',
@@ -352,14 +375,15 @@ const data = [
     brand_name: 'KnitLux',
     ratings: {
       average_rating: 4.6,
-      total_reviews: 723
+      total_reviews: 723,
     },
     price: 39.99,
     discount: 20,
     discounted_price: 31.99,
-    product_description: 'Soft and warm V-neck Jeans made of high-quality wool, perfect for layering during colder months.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Soft and warm V-neck Jeans made of high-quality wool, perfect for layering during colder months.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_025',
@@ -367,14 +391,15 @@ const data = [
     brand_name: 'TacticalWear',
     ratings: {
       average_rating: 4.4,
-      total_reviews: 980
+      total_reviews: 980,
     },
     price: 59.99,
     discount: 10,
     discounted_price: 53.99,
-    product_description: 'Durable cargo Jeans with multiple pockets, designed for functionality and everyday wear.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Durable cargo Jeans with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_026',
@@ -382,14 +407,15 @@ const data = [
     brand_name: 'RayVibe',
     ratings: {
       average_rating: 4.8,
-      total_reviews: 1980
+      total_reviews: 1980,
     },
     price: 49.99,
     discount: 15,
     discounted_price: 42.49,
-    product_description: 'Stylish Jeans with UV protection and a sleek design, perfect for summer outings.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Stylish Jeans with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_027',
@@ -397,14 +423,15 @@ const data = [
     brand_name: 'ChicEssentials',
     ratings: {
       average_rating: 4.2,
-      total_reviews: 560
+      total_reviews: 560,
     },
     price: 29.99,
     discount: 25,
     discounted_price: 22.49,
-    product_description: 'Flirty mini Jeans with a high-waisted design, perfect for casual and semi-formal occasions.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Flirty mini Jeans with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
   },
   {
     id: 'item_028',
@@ -412,15 +439,2041 @@ const data = [
     brand_name: 'DenimCraft',
     ratings: {
       average_rating: 4.5,
-      total_reviews: 1500
+      total_reviews: 1500,
     },
     price: 39.99,
     discount: 10,
     discounted_price: 35.99,
-    product_description: 'Trendy cropped Jeans with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
-    item_photo: Images.jeans,    
-    cat:'jeans'
+    product_description:
+      'Trendy cropped Jeans with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.jeans,
+    cat: 'jeans',
+  },
+  {
+    id: 'item_029',
+    item_name: 'Slim Fit Bedsheet',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit Bedsheet made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.bedsheet,
+    cat: 'Bedsheet',
+  },
+  {
+    id: 'item_030',
+    item_name: 'Leather Bedsheet',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather Bedsheet with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.bedsheet,
+    cat: 'Bedsheet',
+  },
+  {
+    id: 'item_031',
+    item_name: 'Classic Blue Bedsheet',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue Bedsheet with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.bedsheet,
+    cat: 'Bedsheet',
+  },
+  {
+    id: 'item_032',
+    item_name: 'Floral Print bedsheet',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print bedsheet, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_033',
+    item_name: 'Cargo bedsheet',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton bedsheet with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_034',
+    item_name: 'Boot Cut bedsheet',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut bedsheet with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_035',
+    item_name: 'Skinny Fit bedsheet',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting bedsheet made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_036',
+    item_name: 'Distressed bedsheet',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed bedsheet made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_037',
+    item_name: 'Ripped bedsheet',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped bedsheet with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_038',
+    item_name: 'Straight Leg bedsheet',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg bedsheet with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_039',
+    item_name: 'Cargo bedsheet',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo bedsheet with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_040',
+    item_name: 'bedsheet',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish bedsheet with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_041',
+    item_name: 'Mini bedsheet',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini bedsheet with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_042',
+    item_name: 'Denim bedsheet',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped bedsheet with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.bedsheet,
+    cat: 'bedsheet',
+  },
+  {
+    id: 'item_043',
+    item_name: 'Denim shoes',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped shoes with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_044',
+    item_name: 'Slim Fit Shoes',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit shoes made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_045',
+    item_name: 'Leather Shoes',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather shoes with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_046',
+    item_name: 'Classic Blue Shoes',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue shoes with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_047',
+    item_name: 'Floral Print shoes',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print shoes, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_048',
+    item_name: 'Cargo shoes',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton shoes with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_049',
+    item_name: 'Boot Cut shoes',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut shoes with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_050',
+    item_name: 'Skinny Fit shoes',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting shoes made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_051',
+    item_name: 'Distressed shoes',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed shoes made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_052',
+    item_name: 'Ripped shoes',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped shoes with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_053',
+    item_name: 'Straight Leg shoes',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg shoes with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_054',
+    item_name: 'Cargo shoes',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo shoes with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_055',
+    item_name: 'shoes',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish shoes with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_056',
+    item_name: 'Mini shoes',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini shoes with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.shoes,
+    cat: 'shoes',
+  },
+  {
+    id: 'item_057',
+    item_name: 'Denim t-shirt',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped t-shirt with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_058',
+    item_name: 'Slim Fit T-shirt',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit t-shirt made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_059',
+    item_name: 'Leather T-shirt',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather t-shirt with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_060',
+    item_name: 'Classic Blue T-shirt',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue t-shirt with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_061',
+    item_name: 'Floral Print t-shirt',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print t-shirt, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_062',
+    item_name: 'Cargo t-shirt',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton t-shirt with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_063',
+    item_name: 'Boot Cut t-shirt',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut t-shirt with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_064',
+    item_name: 'Skinny Fit t-shirt',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting t-shirt made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_065',
+    item_name: 'Distressed t-shirt',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed t-shirt made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_066',
+    item_name: 'Ripped t-shirt',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped t-shirt with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_067',
+    item_name: 'Straight Leg t-shirt',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg t-shirt with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_068',
+    item_name: 'Cargo t-shirt',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo t-shirt with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_069',
+    item_name: 't-shirt',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish t-shirt with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_070',
+    item_name: 'Mini t-shirt',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini t-shirt with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.tshirt,
+    cat: 't-shirt',
+  },
+  {
+    id: 'item_071',
+    item_name: 'Denim jacket',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped jacket with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_072',
+    item_name: 'Slim Fit Jacket',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit jacket made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_073',
+    item_name: 'Leather Jacket',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather jacket with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_074',
+    item_name: 'Classic Blue Jacket',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue jacket with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_075',
+    item_name: 'Floral Print Jacket',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print jacket, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_076',
+    item_name: 'Cargo Jacket',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton jacket with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_077',
+    item_name: 'Boot Cut Jacket',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut jacket with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_078',
+    item_name: 'Skinny Fit Jacket',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting jacket made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_079',
+    item_name: 'Distressed Jacket',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed jacket made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_080',
+    item_name: 'Ripped Jacket',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped jacket with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_081',
+    item_name: 'Straight Leg Jacket',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg jacket with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_082',
+    item_name: 'Cargo Jacket',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo jacket with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_083',
+    item_name: 'Jacket',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish jacket with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_084',
+    item_name: 'Mini Jacket',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini jacket with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.jacket,
+    cat: 'jacket',
+  },
+  {
+    id: 'item_085',
+    item_name: 'Denim watch',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped watch with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_086',
+    item_name: 'Slim Fit Watch',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit watch made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_087',
+    item_name: 'Leather Watch',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather watch with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_088',
+    item_name: 'Classic Blue Watch',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue watch with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_089',
+    item_name: 'Floral Print Watch',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print watch, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_090',
+    item_name: 'Cargo Watch',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton watch with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_091',
+    item_name: 'Boot Cut Watch',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut watch with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_092',
+    item_name: 'Skinny Fit Watch',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting watch made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_093',
+    item_name: 'Distressed Watch',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed watch made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_094',
+    item_name: 'Ripped Watch',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped watch with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_095',
+    item_name: 'Straight Leg Watch',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg watch with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_096',
+    item_name: 'Cargo Watch',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo watch with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_097',
+    item_name: 'Watch',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish watch with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_098',
+    item_name: 'Mini Watch',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini watch with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.watch,
+    cat: 'watch',
+  },
+  {
+    id: 'item_099',
+    item_name: 'Denim kurta',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped kurta with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_100',
+    item_name: 'Slim Fit Kurta',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit kurta made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_101',
+    item_name: 'Leather Kurta',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather kurta with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_102',
+    item_name: 'Classic Blue Kurta',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue kurta with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_103',
+    item_name: 'Floral Print Kurta',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print kurta, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_104',
+    item_name: 'Cargo Kurta',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton kurta with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_105',
+    item_name: 'Boot Cut Kurta',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut kurta with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_106',
+    item_name: 'Skinny Fit Kurta',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting kurta made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_107',
+    item_name: 'Distressed Kurta',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed kurta made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_108',
+    item_name: 'Ripped Kurta',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped kurta with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_109',
+    item_name: 'Straight Leg Kurta',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg kurta with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_110',
+    item_name: 'Cargo Kurta',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo kurta with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_111',
+    item_name: 'Kurta',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish kurta with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_112',
+    item_name: 'Mini Kurta',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini kurta with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.kurta,
+    cat: 'kurta',
+  },
+  {
+    id: 'item_113',
+    item_name: 'Denim top',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped top with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_114',
+    item_name: 'Slim Fit Top',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit top made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_115',
+    item_name: 'Leather Top',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather top with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_116',
+    item_name: 'Classic Blue Top',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue top with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_117',
+    item_name: 'Floral Print Top',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print top, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_118',
+    item_name: 'Cargo Top',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton top with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_119',
+    item_name: 'Boot Cut Top',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut top with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_120',
+    item_name: 'Skinny Fit Top',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting top made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_121',
+    item_name: 'Distressed Top',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed top made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_122',
+    item_name: 'Ripped Top',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped top with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_123',
+    item_name: 'Straight Leg Top',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg top with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_124',
+    item_name: 'Cargo Top',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo top with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_125',
+    item_name: 'Top',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish top with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_126',
+    item_name: 'Mini Top',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini top with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.top,
+    cat: 'top',
+  },
+  {
+    id: 'item_127',
+    item_name: 'Denim lipstick',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped lipstick with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_128',
+    item_name: 'Slim Fit Lipstick',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit lipstick made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_129',
+    item_name: 'Leather Lipstick',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather lipstick with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_130',
+    item_name: 'Classic Blue Lipstick',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue lipstick with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_131',
+    item_name: 'Floral Print Lipstick',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print lipstick, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_132',
+    item_name: 'Cargo Lipstick',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton lipstick with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_133',
+    item_name: 'Boot Cut Lipstick',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut lipstick with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_134',
+    item_name: 'Skinny Fit Lipstick',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting lipstick made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_135',
+    item_name: 'Distressed Lipstick',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed lipstick made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_136',
+    item_name: 'Ripped Lipstick',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped lipstick with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_137',
+    item_name: 'Straight Leg Lipstick',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg lipstick with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_138',
+    item_name: 'Cargo Lipstick',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo lipstick with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_139',
+    item_name: 'Lipstick',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish lipstick with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_140',
+    item_name: 'Mini Lipstick',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini lipstick with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.lipstick,
+    cat: 'lipstick',
+  },
+  {
+    id: 'item_141',
+    item_name: 'Denim Gjeans',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy cropped Gjeans with ribbed hem and sleeves. Perfect for layering or wearing on its own.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_142',
+    item_name: 'Slim Fit Gjeans',
+    brand_name: 'UrbanStyle',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1024,
+    },
+    price: 24.99,
+    discount: 15,
+    discounted_price: 21.24,
+    product_description:
+      'Comfortable and breathable slim-fit Gjeans made of 100% cotton. Perfect for casual outings.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_143',
+    item_name: 'Leather Gjeans',
+    brand_name: 'MotoX',
+    ratings: {
+      average_rating: 4.7,
+      total_reviews: 1500,
+    },
+    price: 179.99,
+    discount: 20,
+    discounted_price: 143.99,
+    product_description:
+      'Premium leather Gjeans with a classic biker design, featuring durable stitching and stylish zippers.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_144',
+    item_name: 'Classic Blue jeans',
+    brand_name: 'DenimWorld',
+    ratings: {
+      average_rating: 4.3,
+      total_reviews: 500,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Timeless blue Gjeans with a regular fit and stretchable fabric for all-day comfort.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_145',
+    item_name: 'Floral Print Gjeans',
+    brand_name: 'BelleMode',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 1223,
+    },
+    price: 59.99,
+    discount: 30,
+    discounted_price: 41.99,
+    product_description:
+      'Elegant floral print Gjeans, perfect for summer parties and casual outings. Lightweight and flowy.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_146',
+    item_name: 'Cargo Gjeans',
+    brand_name: 'StreetWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 1025,
+    },
+    price: 39.99,
+    discount: 15,
+    discounted_price: 33.99,
+    product_description:
+      'Soft cotton Gjeans with a relaxed fit and adjustable drawstring for a casual and cozy look.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_147',
+    item_name: 'Boot Cut Gjeans',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1250,
+    },
+    price: 49.99,
+    discount: 20,
+    discounted_price: 39.99,
+    product_description:
+      'Stylish boot cut Gjeans with a durable waistband and stretchable material for ultimate comfort.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_148',
+    item_name: 'Skinny Fit Gjeans',
+    brand_name: 'ChinoCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 859,
+    },
+    price: 49.99,
+    discount: 10,
+    discounted_price: 44.99,
+    product_description:
+      'Slim-fitting Gjeans made with breathable fabric, perfect for work, casual, or semi-formal occasions.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_149',
+    item_name: 'Distressed Gjeans',
+    brand_name: 'KnitLux',
+    ratings: {
+      average_rating: 4.6,
+      total_reviews: 723,
+    },
+    price: 39.99,
+    discount: 20,
+    discounted_price: 31.99,
+    product_description:
+      'Soft and warm distressed Gjeans made of high-quality denim, perfect for everyday wear.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_150',
+    item_name: 'Ripped Gjeans',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish ripped Gjeans with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_151',
+    item_name: 'Straight Leg Gjeans',
+    brand_name: 'DenimCraft',
+    ratings: {
+      average_rating: 4.5,
+      total_reviews: 1500,
+    },
+    price: 39.99,
+    discount: 10,
+    discounted_price: 35.99,
+    product_description:
+      'Trendy straight-leg Gjeans with ribbed hem and pockets for everyday wear.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_152',
+    item_name: 'Cargo Gjeans',
+    brand_name: 'TacticalWear',
+    ratings: {
+      average_rating: 4.4,
+      total_reviews: 980,
+    },
+    price: 59.99,
+    discount: 10,
+    discounted_price: 53.99,
+    product_description:
+      'Durable cargo Gjeans with multiple pockets, designed for functionality and everyday wear.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_153',
+    item_name: 'Gjeans',
+    brand_name: 'RayVibe',
+    ratings: {
+      average_rating: 4.8,
+      total_reviews: 1980,
+    },
+    price: 49.99,
+    discount: 15,
+    discounted_price: 42.49,
+    product_description:
+      'Stylish Gjeans with UV protection and a sleek design, perfect for summer outings.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
+  },
+  {
+    id: 'item_154',
+    item_name: 'Mini Gjeans',
+    brand_name: 'ChicEssentials',
+    ratings: {
+      average_rating: 4.2,
+      total_reviews: 560,
+    },
+    price: 29.99,
+    discount: 25,
+    discounted_price: 22.49,
+    product_description:
+      'Flirty mini Gjeans with a high-waisted design, perfect for casual and semi-formal occasions.',
+    item_photo: Images.gjeans,
+    cat: 'Gjeans',
   }
-]
+
+
+
+
+
+
+
+
+  
+];
 
 export default data;

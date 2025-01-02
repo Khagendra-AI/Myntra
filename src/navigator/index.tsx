@@ -13,6 +13,7 @@ import LoginPage from '../screens/LoginPage';
 import CreateAccount from '../screens/CreateAccount';
 import ForgotPassword from '../screens/ForgotPassword';
 import Minis from '../screens/Minis';
+import MinisNew from '../screens/MinisNew';
 
 
 
@@ -68,8 +69,8 @@ export default function RootNavigation() {
           options={{headerShown: false}}
         />
          <Stack.Screen
-          name="Minis"
-          component={Minis}
+          name="MinisNew"
+          component={MinisNew}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

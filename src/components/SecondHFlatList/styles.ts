@@ -8,10 +8,12 @@ const styles = StyleSheet.create({
     marginHorizontal:10,
   },
   imageView:{
-    borderWidth:1,
+    // borderWidth:1,
     borderRadius:50,
   },
   image:{
+    resizeMode:'stretch',
+    borderRadius:50,
     height:50,
     width:50,
   },

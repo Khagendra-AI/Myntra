@@ -24,23 +24,24 @@ import {
 
 const ProductDetails = ({navigation}) => {
   const [inbag, setinbag] = useState(false);
-  const [starred,setstarred] = useState(false);
-  const [mainindex,setmainindex]=useState(-1)
-  const {products, totalPrice,totaldiscountedPrice,watchlistdata} = useSelector((store: any) => store.mainapi);
+  const [starred, setstarred] = useState(false);
+  const [mainindex, setmainindex] = useState(-1);
+  const {products, totalPrice, totaldiscountedPrice, watchlistdata} =
+    useSelector((store: any) => store.mainapi);
   const dispatch = useDispatch();
   const route = useRoute();
   // console.log('route', route.params.item);
-  console.log(products[0]);
+  // console.log(products[0],"what");
   const onWishListPress = () => {
-    if(starred){
-
-      dispatch(removeWatchlist(mainindex))
+    if (starred) {
+      dispatch(removeWatchlist(route.params.item.id));
       setstarred(false);
-    }
-    else{
-      console.log('route-->', route)
+      // checkWatchlist();
+    } else {
+      // console.log('route-->', route);
       dispatch(addWatchlist(route.params.item));
       setstarred(true);
+      // checkWatchlist();
     }
   };
   const onBagPress = () => {
@@ -57,38 +58,42 @@ const ProductDetails = ({navigation}) => {
     (products ?? [])?.map((item: any, index: any) => {
       // console.log(item, 'itemmmmm');
       if (item.id === route.params?.item?.id) {
-        console.log('yesss');
+        // console.log('yesss');
         setinbag(true);
-       
       }
     });
   };
   const checkWatchlist = () => {
     (watchlistdata ?? [])?.map((item: any, index: any) => {
       if (item.id === route.params?.item?.id) {
-        setstarred(true)
-        console.log(index,'index')
-        setmainindex(index)
+        setstarred(true);
+        // console.log(index, 'index');
+        setmainindex(index);
       }
     });
   };
   useEffect(() => {
     checkBag();
     checkWatchlist();
-    console.log('ho gya run', totalPrice,totaldiscountedPrice);
+    // console.log('ho gya run', totalPrice, totaldiscountedPrice);
   }, []);
-  const navigateToWishList=()=>{
-    navigation.navigate("WishList")
-  }
-  const navigateToBag=()=>{
-    navigation.navigate("Bag")
-  }
- const onBackClick=()=>{
-  navigation.goBack()
- }
+  const navigateToWishList = () => {
+    navigation.navigate('WishList');
+  };
+  const navigateToBag = () => {
+    navigation.navigate('Bag');
+  };
+  const onBackClick = () => {
+    navigation.goBack();
+  };
   return (
     <View style={styles.container}>
-      <SecondaryHeader headerText={route.params.item.brand_name} navigateToBag={navigateToBag} navigateToWishList={navigateToWishList} onBackClick={onBackClick}/>
+      <SecondaryHeader
+        headerText={route.params.item.brand_name}
+        navigateToBag={navigateToBag}
+        navigateToWishList={navigateToWishList}
+        onBackClick={onBackClick}
+      />
       <ScrollView style={styles.dataView}>
         <Image style={styles.mainImage} source={route.params.item.item_photo} />
         <View style={styles.dataTextView}>
@@ -114,9 +119,11 @@ const ProductDetails = ({navigation}) => {
         <Delivery />
       </ScrollView>
       <View style={styles.footerView}>
-
         <TouchableOpacity style={styles.wishlistView} onPress={onWishListPress}>
-          <Image source={starred ? Icon.favorite : Icon.heart} style={styles.heartImage} />
+          <Image
+            source={starred ? Icon.favorite : Icon.heart}
+            style={styles.heartImage}
+          />
           <Text style={styles.wishlistText}>WishList</Text>
         </TouchableOpacity>
 

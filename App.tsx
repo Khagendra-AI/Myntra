@@ -13,6 +13,7 @@ const App = () => {
       <RootNavigation />
       </PersistGate>
     </Provider>
+    // <RootNavigation/>
 
   );
 };

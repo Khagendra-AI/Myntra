@@ -12,13 +12,15 @@ import {Icon} from '../../assets';
 const Header = ({navigateToProfile,navigateToWishList}:{navigateToProfile:any,navigateToWishList:any}) => {
   return (
     
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.upperView}>
           <View style={styles.leftUpperView}>
+            
             <View style={styles.myntraView}>
               <Text style={styles.myntraText}>Myntra</Text>
               <Image style={styles.downarrowImage} source={Icon.downarrow} />
             </View>
+
             <View style={styles.insiderView}>
               <Image source={Icon.crown} />
               <View style={styles.insiderTextView}>
@@ -62,7 +64,7 @@ const Header = ({navigateToProfile,navigateToWishList}:{navigateToProfile:any,na
           </View>
         </View>
       
-    </SafeAreaView>
+    </View>
   );
 };
 

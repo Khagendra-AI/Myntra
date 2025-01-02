@@ -7,46 +7,47 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import {Icon} from '../../assets';
+import {Icon, Images} from '../../assets';
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
+
 
 const FirstHFlatList = () => {
   const data = [
     {
       id: 1,
       brand_name: 'SHIRTS',
-      image: Icon.home,
+      image: Images.boy,
     },
     {
       id: 2,
       brand_name: 'JEANS',
-      image: Icon.home,
+      image: Images.jeans,
     },
     {
       id: 3,
       brand_name: 'BEDSHEET',
-      image: Icon.home,
+      image: Images.bedsheet,
     },
     {
       id: 4,
       brand_name: 'SHOES',
-      image: Icon.home,
+      image: Images.shoes,
     },
     {
       id: 5,
-      brand_name: 'T-SHIRTS',
-      image: Icon.home,
+      brand_name: 'T-SHIRT',
+      image: Images.tshirt,
     },
     {
       id: 6,
-      brand_name: 'JACKETS',
-      image: Icon.home,
+      brand_name: 'JACKET',
+      image: Images.jacket,
     },
     {
       id: 7,
-      brand_name: 'WATCHES',
-      image: Icon.home,
+      brand_name: 'WATCH',
+      image: Images.watch,
     },
   ];
 

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Image,
   Dimensions,
+  Text,
 } from 'react-native';
 import Video from 'react-native-video';
 
@@ -22,7 +23,7 @@ const videos = [
   require('../../assets/Reels/video5.mp4'),
 ];
 
-const Minis = ({navigation}: {navigation: any}) => {
+const MinisNew = ({navigation}: {navigation: any}) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleScroll = (e: any) => {
@@ -42,13 +43,13 @@ const Minis = ({navigation}: {navigation: any}) => {
         onPress={() => handleGoBack()}>
         <Image source={Icon.back} style={styles.backArrowIcon} />
       </TouchableOpacity>
-
       <FlatList
         data={videos}
         keyExtractor={(_, index) => index.toString()}
         onScroll={handleScroll}
         pagingEnabled
         windowSize={2}
+        nestedScrollEnabled
         snapToAlignment="start"
         decelerationRate="normal"
         scrollEventThrottle={16}
@@ -81,11 +82,46 @@ const Minis = ({navigation}: {navigation: any}) => {
                 <Image source={Icon.camera} style={styles.pauseIcon} />
               )}
             </TouchableOpacity>
+            {/* <Slider /> */}
           </View>
         )}
       />
+      {/* <Slider /> */}
     </View>
   );
 };
 
-export default Minis;
+const Slider = () => {
+  const renderItem = ({item}) => {
+    return (
+      <View
+        style={{
+          height: 140,
+          width: 100,
+          position: 'absolute',
+          bottom: 20,
+          backgroundColor: 'red',
+          marginRight: 10,
+        }}>
+        <Text>`${item}`</Text>
+      </View>
+    );
+  };
+
+  return (
+    <View>
+      <FlatList
+        data={['', '']}
+        // horizontal
+        nestedScrollEnabled
+        contentContainerStyle={{borderWidth: 1}}
+        renderItem={renderItem}
+        style={{
+          borderWidth: 1,
+          height: 200,
+        }}
+      />
+    </View>
+  );
+};
+export default MinisNew;

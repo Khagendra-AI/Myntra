@@ -33,5 +33,17 @@ const Images = {
   emptycart: require('./images/emptycart.png'),
   boy: require('./images/boy.jpeg'),
   jeans: require('./images/jeans.jpg'),
+  bedsheet: require('./images/bedsheet.jpeg'),
+  jacket: require('./images/jacket.jpg'),
+  tshirt: require('./images/tshirt.jpg'),
+  watch: require('./images/watch.jpg'),
+  shoes: require('./images/shoes.jpg'),
+  gtshirt: require('./images/gtshirt.jpg'),
+  gjeans: require('./images/gjeans.jpg'),
+  gjacket: require('./images/gjacket.jpg'),
+  kurta: require('./images/gkurta.jpg'),
+  lipstick: require('./images/lipstick.jpg'),
+  top: require('./images/tops.jpg'),
+  
 };
 export {Icon, Images};

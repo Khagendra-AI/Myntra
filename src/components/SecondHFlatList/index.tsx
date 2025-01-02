@@ -1,50 +1,56 @@
 import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import styles from './styles';
-import { Icon } from '../../assets';
+import { Icon, Images } from '../../assets';
+import { useNavigation } from '@react-navigation/native';
 
 const SecondHFlatList = () => {
   const data = [
     {
       id: 1,
-      brand_name: "KURTAS",
-      image: Icon.home
+      brand_name: "KURTA",
+      image: Images.kurta
     },
     {
       id: 2,
-      brand_name: "TOPS",
-      image: Icon.home
+      brand_name: "TOP",
+      image:Images.top
     },
     {
       id: 3,
       brand_name: "LIPSTICK",
-      image: Icon.home
+      image: Images.lipstick
     },
     {
       id: 4,
-      brand_name: "JEANS",
-      image: Icon.home
+      brand_name: "GJEANS",
+      image: Images.gjeans
     },
     {
       id: 5,
-      brand_name: "T-SHIRTS",
-      image: Icon.home
+      brand_name: "T-SHIRT",
+      image: Images.gtshirt
     },
     {
       id: 6,
-      brand_name: "JACKETS",
-      image: Icon.home
+      brand_name: "JACKET",
+      image: Images.gjacket
     },
     {
       id: 7,
-      brand_name: "WATCHES",
-      image: Icon.home
+      brand_name: "WATCH",
+      image:Images.watch
     }
   ];
+
+  const navigation=useNavigation();
+  const navigateToProductList=(brand_name)=>{
+    navigation.navigate("ProductList",{brand_name})
+  }
   const Item = ({item}:{item:any}) => (
     <TouchableOpacity
       style={styles.item}
-      onPress={() => console.log(item.id, 'idd')}>
+      onPress={()=>navigateToProductList(item.brand_name)}>
         <View style={styles.imageView}>
       <Image source={item.image} style={styles.image} />
       </View>

@@ -37,6 +37,39 @@ const ProductList = () => {
       else if(tag==='JEANS'){
         filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
       }
+      else if(tag==='BEDSHEET'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='SHOES'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='T-SHIRT'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='JACKET'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='WATCH'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='KURTA'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='TOP'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='LIPSTICK'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='GJEANS'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='JACKET'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
+      else if(tag==='WATCH'){
+        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
+      }
     setFilteredItem(filtered);
   }
 
@@ -68,6 +101,7 @@ const ProductList = () => {
     <SecondaryHeader navigateToWishList={navigateToWishList} navigateToBag={navigateToBag} headerText={tag}/>
       <View style={styles.container}>
         <FlatList
+        bounces={false}
           numColumns={2}
           data={filteredItem}
           renderItem={({item}) => <Item item={item} />}
