@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     marginVertical:2,
     width:SCREEN_WIDTH,
     height:SCREEN_HEIGHT*.3,
+    marginBottom:'5%'
   },
   priceText:{
     fontWeight:'700',

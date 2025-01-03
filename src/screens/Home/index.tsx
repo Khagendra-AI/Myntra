@@ -16,32 +16,34 @@ const data = [
   require('../../assets/images/banner5.png'),
 ];
 
-const Home = ({navigation}:{navigation:any}) => {
-
+const Home = ({navigation}: {navigation: any}) => {
   const navigateToProfile = () => {
-    navigation.navigate("Profile")
+    navigation.navigate('Profile');
   };
-  const navigateToWishList=()=>{
-    navigation.navigate("WishList")
-  }
-  // const navigateToProductList=()=>{
-  //   navigation.navigate("ProductList")
-  // }
+  const navigateToWishList = () => {
+    navigation.navigate('WishList');
+  };
+  const navigateToSearch = () => {
+    navigation.navigate('Search');
+  };
   return (
-    <SafeAreaView style={{flex:1}}>
-      <Header navigateToProfile={navigateToProfile} navigateToWishList={navigateToWishList}/>
+    <SafeAreaView style={{flex: 1}}>
+      <Header
+        navigateToSearch={navigateToSearch}
+        navigateToProfile={navigateToProfile}
+        navigateToWishList={navigateToWishList}
+      />
       <ScrollView style={styles.container}>
-        <FirstHFlatList/>
-        <SecondHFlatList/>
+        <FirstHFlatList />
+        <SecondHFlatList />
         {/* <ProductList/> */}
-        <Banner adData={data}/>
+        {/* <Banner adData={data} /> */}
         <ContinueBrowsing heading={'Joyful Savings To Bag'} />
-        
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        <SlidingBanner/>
 
+        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
+        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
+        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
+        {/* <SlidingBanner/> */}
       </ScrollView>
     </SafeAreaView>
   );

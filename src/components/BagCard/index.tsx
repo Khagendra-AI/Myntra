@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './styles'
 import { Icon } from '../../assets'
 import { useDispatch, useSelector } from 'react-redux'
-import { removeFromBag } from '../../redux/config/configSlice'
+import { removediscountedPrice, removeFromBag, removePrice } from '../../redux/config/configSlice'
 
 const BagCard = ({image,brandText,itemText,price,disPrice,infoText,id}) => {
   const {products} = useSelector((store: any) => store.mainapi);
@@ -13,6 +13,8 @@ const BagCard = ({image,brandText,itemText,price,disPrice,infoText,id}) => {
     (products ?? [])?.map((item: any, index: any) => {
       if (item.id === id ) {
         dispatch(removeFromBag(index))
+        dispatch(removediscountedPrice(disPrice))
+        dispatch(removePrice(price))
       }
     });
     

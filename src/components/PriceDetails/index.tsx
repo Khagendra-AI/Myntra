@@ -15,11 +15,11 @@ const PriceDetails = () => {
       <View style={styles.hline}/>
       <View style={styles.commonView}>
         <Text style={styles.commonText}>Total MRP</Text>
-        <Text style={styles.commonText}>${totalPrice}</Text>
+        <Text style={styles.commonText}>${parseFloat(totalPrice).toFixed(2)}</Text>
       </View>
       <View style={styles.commonView}>
       <Text style={styles.commonText}>Discount on MRP</Text>
-      <Text style={[styles.commonText,{color:'green'}]}>-${discount}</Text>
+      <Text style={[styles.commonText,{color:'green'}]}>-${parseFloat(discount).toFixed(2)}</Text>
       </View>
       <View style={styles.commonView}>
       <Text style={styles.commonText}>Platform Fee</Text>

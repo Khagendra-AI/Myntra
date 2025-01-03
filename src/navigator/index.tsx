@@ -14,6 +14,9 @@ import CreateAccount from '../screens/CreateAccount';
 import ForgotPassword from '../screens/ForgotPassword';
 import Minis from '../screens/Minis';
 import MinisNew from '../screens/MinisNew';
+import Search from '../screens/Search';
+
+
 
 
 
@@ -71,6 +74,11 @@ export default function RootNavigation() {
          <Stack.Screen
           name="MinisNew"
           component={MinisNew}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Search"
+          component={Search}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

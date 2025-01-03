@@ -9,7 +9,7 @@ import React from 'react';
 import styles from './styles';
 import {Icon} from '../../assets';
 
-const Header = ({navigateToProfile,navigateToWishList}:{navigateToProfile:any,navigateToWishList:any}) => {
+const Header = ({navigateToProfile,navigateToWishList,navigateToSearch}:{navigateToProfile:any,navigateToWishList:any,navigateToSearch:any}) => {
   return (
     
       <View style={styles.container}>
@@ -41,7 +41,7 @@ const Header = ({navigateToProfile,navigateToWishList}:{navigateToProfile:any,na
         </View>
         <View style={styles.lowerView}>
           <View style={styles.lowerSubView}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={navigateToSearch}>
               <View style={styles.touchableView}>
                 <Image source={Icon.search} style={styles.searchImage} />
                 <Text style={styles.placeholderText}>

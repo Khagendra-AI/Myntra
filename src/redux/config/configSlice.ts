@@ -61,6 +61,11 @@ const configSlice = createSlice({
       state.products = arr;
       console.log(state.products, 'deleted');
     },
+    emptyBag:(state:any,action)=>{
+      state.products=[]
+      state.totaldiscountedPrice=0
+      state.totalPrice=0
+    },
     addPrice: (state: any, action) => {
       console.log('chljaycyuftdse6sduyfc');
       const data = action.payload;
@@ -71,6 +76,17 @@ const configSlice = createSlice({
       const data = action.payload;
       state.totaldiscountedPrice += data;
     },
+    removePrice: (state: any, action) => {
+      console.log('chljaycyuftdse6sduyfc');
+      const data = action.payload;
+      state.totalPrice -= data;
+      // console.log(state.totalPrice,"price")
+    },
+    removediscountedPrice: (state: any, action) => {
+      const data = action.payload;
+      state.totaldiscountedPrice -= data;
+    },
+    
     // // addLoginData: (state, action) => {
     // //   const data = action.payload;
     // //   state.userphone = data.phone;
@@ -144,10 +160,6 @@ const configSlice = createSlice({
 // export const {getProducts} = configSlice.selectors;
 
 export const {
-  // increaseCount,
-  // decreaseCount,
-  // SET_CONFIG_DATA,
-  // increaseCountByPayload,
   addWatchlist,
   removeWatchlist,
   addToBag,
@@ -158,6 +170,9 @@ export const {
   addLoginToken,
   removeLoginToken,
   removeUserData,
+  emptyBag,
+  removePrice,
+  removediscountedPrice,
 } = configSlice.actions;
 
 export default configSlice.reducer;

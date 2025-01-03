@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles';
 import {Icon, Images} from '../../assets';
 import data from '../../../data';
@@ -16,67 +16,83 @@ import SecondaryHeader from '../../components/SecondaryHeader';
 const ProductList = () => {
   const navigation = useNavigation();
   const route = useRoute();
-  const tag=route.params.brand_name;
+  const tag = route.params.brand_name;
   const handlenav = item => {
     navigation.navigate('ProductDetails', {item});
   };
-  const navigateToWishList=()=>{
-    navigation.navigate("WishList")
-  }
-  const navigateToBag=()=>{
-    navigation.navigate("Bag")
-  }
+  const navigateToWishList = () => {
+    navigation.navigate('WishList');
+  };
+  const navigateToBag = () => {
+    navigation.navigate('Bag');
+  };
+  const onBackClick = () => {
+    navigation.goBack();
+  };
 
-  const[filteredItem,setFilteredItem]=useState([]);
+  const [filteredItem, setFilteredItem] = useState([]);
 
-  const fil=()=>{
-    let filtered=[];
-      if(tag==='SHIRTS'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='JEANS'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='BEDSHEET'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='SHOES'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='T-SHIRT'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='JACKET'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='WATCH'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='KURTA'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='TOP'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='LIPSTICK'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='GJEANS'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='JACKET'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
-      else if(tag==='WATCH'){
-        filtered=data.filter(item=>item.cat.toLowerCase()===tag.toLowerCase());
-      }
+  const fil = () => {
+    let filtered = [];
+    if (tag === 'SHIRTS') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'JEANS') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'BEDSHEET') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'SHOES') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'T-SHIRT') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'JACKET') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'WATCH') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'KURTA') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'TOP') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'LIPSTICK') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'GJEANS') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'JACKET') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    } else if (tag === 'WATCH') {
+      filtered = data.filter(
+        item => item.cat.toLowerCase() === tag.toLowerCase(),
+      );
+    }
     setFilteredItem(filtered);
-  }
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     fil();
-  },[])
-
+  }, []);
 
   const Item = ({item}: {item: any}) => (
     <TouchableOpacity style={styles.item} onPress={() => handlenav(item)}>
@@ -98,10 +114,15 @@ const ProductList = () => {
   );
   return (
     <>
-    <SecondaryHeader navigateToWishList={navigateToWishList} navigateToBag={navigateToBag} headerText={tag}/>
+      <SecondaryHeader
+        navigateToWishList={navigateToWishList}
+        navigateToBag={navigateToBag}
+        headerText={tag}
+        onBackClick={onBackClick}
+      />
       <View style={styles.container}>
         <FlatList
-        bounces={false}
+          bounces={false}
           numColumns={2}
           data={filteredItem}
           renderItem={({item}) => <Item item={item} />}

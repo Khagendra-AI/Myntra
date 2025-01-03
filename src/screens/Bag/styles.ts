@@ -1,5 +1,6 @@
-import { StyleSheet } from "react-native";
-
+import { Dimensions, StyleSheet } from "react-native";
+const SCREEN_HEIGHT = Dimensions.get('screen').height;
+const SCREEN_WIDTH = Dimensions.get('screen').width;
 const styles = StyleSheet.create({
   container:{
     flex:1,
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
   emptycartImage:{
     alignSelf:'center',
     height:'41%',
-    width:'45%',
+    width:'49%',
   },
   subheadingEmpty:{
     marginTop:'2%',
@@ -48,6 +49,22 @@ const styles = StyleSheet.create({
     fontSize:18,
     fontWeight:'700',
     alignSelf:'center',
+  },
+  scrollStyle:{
+    flex:1,
+  },
+  flatlist:{
+    flex:1,
+    
+  },
+  footer:{
+    justifyContent:'center',
+    height:SCREEN_HEIGHT*.07,
+    alignItems:'center',
+    backgroundColor:'red'
+  },
+  placeorderText:{
+    color:'white',
   },
 })
 export default styles

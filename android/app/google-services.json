@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566627018863",
+    "project_id": "myntra-adaef",
+    "storage_bucket": "myntra-adaef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566627018863:android:8e5a9974c3b3fc46aa059a",
+        "android_client_info": {
+          "package_name": "com.myntra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwiJeINOsvlIPi5ulKEq2ztFBVpTRyjy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

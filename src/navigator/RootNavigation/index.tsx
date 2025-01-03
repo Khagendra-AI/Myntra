@@ -44,7 +44,7 @@ export default function BottomNav() {
         component={MinisNew}
         options={{
           tabBarStyle: {
-
+            display:'none'
           },
 
           tabBarIcon: ({color, size}) => (
@@ -67,6 +67,7 @@ export default function BottomNav() {
         name="Trends"
         component={Trends}
         options={{
+         
           tabBarIcon: ({color, size}) => (
             <Image
               source={Icon.Trends}
@@ -82,6 +83,9 @@ export default function BottomNav() {
         name="Bag"
         component={Bag}
         options={{
+          tabBarStyle: {
+            display:'none'
+          },
           tabBarIcon: ({color, size}) => (
             <Image
               source={Icon.Bag}

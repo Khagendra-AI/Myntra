@@ -68,7 +68,9 @@ const Profile = ({navigation}: {navigation: any}) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <View style={styles.subHeader}>
+          <TouchableOpacity onPress={()=> navigation.goBack()}>
           <Image source={Icon.back} style={styles.backImage} />
+          </TouchableOpacity>
           <Text style={styles.profileText}>Profile</Text>
         </View>
       </View>
