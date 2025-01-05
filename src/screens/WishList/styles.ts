@@ -109,6 +109,28 @@ const styles = StyleSheet.create({
     alignItems:'center',
 
   },
+  emptycartView:{
+    paddingVertical:'20%',
+    flex:1,
+    // backgroundColor:'red'
+  },
+  emptycartImage:{
+    resizeMode:'stretch',
+    alignSelf:'center',
+    height:'41%',
+    width:'60%',
+  },
+  subheadingEmpty:{
+    marginTop:'2%',
+    alignSelf:'center',
+    color:'grey',
+  },
+  headingEmpty:{
+    marginTop:'5%',
+    fontSize:18,
+    fontWeight:'700',
+    alignSelf:'center',
+  },
 
 });
 export default styles;

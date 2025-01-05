@@ -53,6 +53,7 @@ const Images = {
   banner3: require('./images/banner3.png'),
   banner4: require('./images/banner4.png'),
   banner5: require('./images/banner5.png'),
+  emptylist: require('./images/emptylist.png'),
   
 };
 export {Icon, Images};

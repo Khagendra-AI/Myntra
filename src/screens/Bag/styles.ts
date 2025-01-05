@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     fontWeight:'700'
   },
   emptycartImage:{
+    resizeMode:'stretch',
     alignSelf:'center',
     height:'41%',
     width:'49%',

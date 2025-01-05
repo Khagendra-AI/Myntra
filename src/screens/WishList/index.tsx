@@ -1,10 +1,12 @@
 import { FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './styles'
-import { Icon } from '../../assets'
-import { useSelector } from 'react-redux'
+import { Icon, Images } from '../../assets'
+import { useDispatch, useSelector } from 'react-redux'
+import { adddiscountedPrice, addPrice, addToBag, removeWatchlist } from '../../redux/config/configSlice'
 
 const WishList = ({navigation}) => {
+  const dispatch = useDispatch();
   const handlenav = item => {
     navigation.navigate('ProductDetails', {item});
   };
@@ -22,11 +24,29 @@ const WishList = ({navigation}) => {
           </View>
         </View>
       </View>
-      <View style={styles.addBagView}>
+      <TouchableOpacity style={styles.addBagView} onPress={()=>movetobagPress(item)}>
         <Text style={styles.moveBagText}>MOVE TO BAG</Text>
-      </View>
+      </TouchableOpacity>
     </TouchableOpacity>
   );
+  const movetobagPress=(item)=>{
+    let inbag=false;
+    (products ?? [])?.map((it: any, index: any) => {
+      if (it.id === item.id) {
+        inbag=true;
+        dispatch(removeWatchlist(item.id));
+      }
+    });
+    if(!inbag){
+     
+      dispatch(addPrice(item.price));
+      dispatch(addToBag(item));
+      dispatch(adddiscountedPrice(item.discounted_price));
+      dispatch(removeWatchlist(item.id));
+    }
+    
+    
+  }
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -48,7 +68,13 @@ const WishList = ({navigation}) => {
         </TouchableOpacity>
       </View>
      </View>
-     {watchlistdata?.length ==0 ? <View></View> :
+     {watchlistdata?.length ==0 ? <View style={styles.emptycartView}>
+          <Image source={Images.emptylist} style={styles.emptycartImage} />
+          <Text style={styles.headingEmpty}>Hey, it feels so light!</Text>
+          <Text style={styles.subheadingEmpty}>
+            There is nothing in your WishList. Lets's add some items.
+          </Text>
+        </View> :
      <View style={styles.upperFlatView}>
       <View style={styles.flatlistView}>
          <FlatList

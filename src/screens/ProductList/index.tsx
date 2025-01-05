@@ -17,7 +17,7 @@ const ProductList = () => {
   const navigation = useNavigation();
   const route = useRoute();
   const tag = route.params.brand_name;
-  const handlenav = item => {
+  const handlenav = (item:any) => {
     navigation.navigate('ProductDetails', {item});
   };
   const navigateToWishList = () => {
@@ -33,7 +33,7 @@ const ProductList = () => {
   const [filteredItem, setFilteredItem] = useState([]);
 
   const fil = () => {
-    let filtered = [];
+    let filtered:any = [];
     if (tag === 'SHIRTS') {
       filtered = data.filter(
         item => item.cat.toLowerCase() === tag.toLowerCase(),

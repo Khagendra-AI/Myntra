@@ -4,8 +4,8 @@ import styles from './styles'
 import TrendsCard from '../../components/TrendsCard'
 import { Icon, Images } from '../../assets'
 
-const Trends = ({navigation}) => {
-  const navigateToProductList=(brand_name)=>{
+const Trends = ({navigation}:{navigation:any}) => {
+  const navigateToProductList=(brand_name:any)=>{
     navigation.navigate("ProductList",{brand_name})
   }
   return (
