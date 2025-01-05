@@ -49,7 +49,7 @@ export default function BottomNav() {
 
           tabBarIcon: ({color, size}) => (
             <TouchableOpacity
-              hitSlop={{top: 0, bottom: 50, right: 50, left: 50}}
+              hitSlop={{top: 7, bottom: 18, right: 39, left: 39}}
               style={styles.touchable}
               onPress={() => navigation.navigate('MinisNew')}>
               <Image

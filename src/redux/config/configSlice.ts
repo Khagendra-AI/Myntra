@@ -17,6 +17,7 @@ let initialState = {
   walletBalance: 0,
   watchlistdata: [],
   token: '',
+  splashtoken:'',
   userDetail: {},
   totalPrice: 0,
   totaldiscountedPrice: 0,

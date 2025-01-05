@@ -3,16 +3,22 @@ const SCREEN_HEIGHT = Dimensions.get('screen').height;
 const SCREEN_WIDTH = Dimensions.get('screen').width;
 const styles = StyleSheet.create({
   container: {
+    
+   
     margin: 5,
     paddingHorizontal: 9,
     paddingVertical:5,
     height: SCREEN_HEIGHT * 0.27,
     width: SCREEN_WIDTH * 0.35,
     borderRadius: 10,
-    borderWidth: 1,
-    backgroundColor: 'grey',
+   
+    // backgroundColor: 'grey',
     justifyContent: 'flex-end',
     alignItems: 'center',
+  },
+  bgimage:{
+    borderWidth: .5,
+    borderRadius: 10,
   },
   dataView: {
     width: '100%',
@@ -33,12 +39,12 @@ const styles = StyleSheet.create({
   },
   topText:{
     fontSize:14,
-    color:'white',
+    color:'red',
     fontWeight:'900'
   },
   midText:{
     fontSize:14,
-    color:'yellow',
+    color:'green',
     fontWeight:'900'
   },
   botText:{

@@ -26,6 +26,10 @@ const Icon = {
   support: require('./icons/support.png'),
   eye: require('./icons/eye.png'),
   eyeoff: require('./icons/eyeoff.png'),
+  levislogo: require('./icons/levislogo.jpg'),
+  pause: require('./icons/pause.png'),
+  bookmark: require('./icons/bookmark.png'),
+
 
 
 };
@@ -44,6 +48,11 @@ const Images = {
   kurta: require('./images/gkurta.jpg'),
   lipstick: require('./images/lipstick.jpg'),
   top: require('./images/tops.jpg'),
+  banner1: require('./images/banner1.png'),
+  banner2: require('./images/banner2.png'),
+  banner3: require('./images/banner3.png'),
+  banner4: require('./images/banner4.png'),
+  banner5: require('./images/banner5.png'),
   
 };
 export {Icon, Images};

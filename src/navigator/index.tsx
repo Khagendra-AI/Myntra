@@ -15,6 +15,7 @@ import ForgotPassword from '../screens/ForgotPassword';
 import Minis from '../screens/Minis';
 import MinisNew from '../screens/MinisNew';
 import Search from '../screens/Search';
+import Splash from '../screens/Splash';
 
 
 
@@ -26,6 +27,11 @@ export default function RootNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="Splash"
+          component={Splash}
+          options={{headerShown: false}}
+        />
       <Stack.Screen
           name="BottomNav"
           component={BottomNav}

@@ -3,8 +3,6 @@ import React from 'react';
 import ContinueBrowsing from '../../components/ContinueBrowsing';
 import Header from '../../components/Header';
 import styles from './styles';
-import SlidingBanner from '../../components/SlidingBanner';
-import ProductList from '../ProductList';
 import FirstHFlatList from '../../components/FirstHFlatList';
 import SecondHFlatList from '../../components/SecondHFlatList';
 import Banner from '../../components/Banner';
@@ -43,7 +41,7 @@ const Home = ({navigation}: {navigation: any}) => {
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
         <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        {/* <SlidingBanner/> */}
+        
       </ScrollView>
     </SafeAreaView>
   );
