@@ -1,6 +1,8 @@
 import {
+  Alert,
   Image,
   ScrollView,
+  Share,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -117,9 +119,36 @@ const ProductDetails = ({navigation}: {navigation: any}) => {
   const onBackClick = () => {
     navigation.goBack();
   };
+  const onShare = async () => {
+    try {
+      
+      const { item_name, brand_name, discounted_price, price } = route.params.item;
+  
+     
+      const shareData = `${brand_name}: ${item_name}\nPrice: $${discounted_price}\nOriginal Price: $${price}`;
+  
+      
+      const result = await Share.share({
+        message: shareData, 
+      });
+  
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          console.log('Shared with', result.activityType);
+        } else {
+          console.log('Shared successfully');
+        }
+      } else {
+        console.log('Share action was dismissed');
+      }
+    } catch (error:any) {
+      Alert.alert('Error', error.message);
+    }
+  };
   return (
     <View style={styles.container}>
       <SecondaryHeader
+      onShare={onShare}
         headerText={route?.params?.item.brand_name}
         navigateToBag={navigateToBag}
         navigateToWishList={navigateToWishList}

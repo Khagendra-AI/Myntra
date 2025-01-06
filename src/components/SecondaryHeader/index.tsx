@@ -15,6 +15,7 @@ interface SecondaryHeaderProps {
   navigateToWishList: () => void;
   navigateToBag: () => void;
   onBackClick: () => void;
+  onShare:()=>void;
 }
 
 const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
@@ -22,6 +23,7 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
   navigateToWishList,
   navigateToBag,
   onBackClick,
+  onShare,
 }) => {
   return (
     <SafeAreaView style={styles.container}>
@@ -36,7 +38,9 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
         </View>
       </View>
       <View style={styles.rightView}>
+        <TouchableOpacity onPress={onShare}>
         <Image source={Icon.share} style={styles.backImage} />
+        </TouchableOpacity>
         <TouchableOpacity onPress={navigateToWishList} activeOpacity={1}>
           <Image source={Icon.heart} style={styles.backImage} />
         </TouchableOpacity>

@@ -1,6 +1,8 @@
 import {
+  Alert,
   FlatList,
   Image,
+  Share,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -35,9 +37,33 @@ const ProductList = () => {
   const onBackClick = () => {
     navigation.goBack();
   };
-
+  
   const [filteredItem, setFilteredItem] = useState([]);
-
+  // console.log(filteredItem,"data")
+  const onShare = async () => {
+    try {
+      const shareData = filteredItem
+        .map((item:any) => `${item.brand_name}: ${item.item_name}\nPrice: $${item.discounted_price}`)
+        .join('\n\n');
+  
+      const result = await Share.share({
+        message: shareData, 
+      });
+  
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          console.log('Shared with', result.activityType);
+        } else {
+          console.log('Shared successfully');
+        }
+      } else {
+        console.log('Share action was dismissed');
+      }
+    } catch (error:any) {
+      Alert.alert(error.message);
+    }
+  };
+  
   const fil = () => {
     let filtered: any = [];
     if (tag === 'SHIRTS') {
@@ -140,6 +166,7 @@ const ProductList = () => {
   return (
     <>
       <SecondaryHeader
+      onShare={onShare}
         navigateToWishList={navigateToWishList}
         navigateToBag={navigateToBag}
         headerText={tag}
