@@ -20,7 +20,7 @@ import RazorpayCheckout from 'react-native-razorpay';
 import { emptyBag, removeFromBag } from '../../redux/config/configSlice';
 const SCREEN_HEIGHT = Dimensions.get('screen').height;
 const SCREEN_WIDTH = Dimensions.get('screen').width;
-const Bag = ({navigation}) => {
+const Bag = ({navigation}:{navigation:any}) => {
   const dispatch = useDispatch();
 
   const {token,

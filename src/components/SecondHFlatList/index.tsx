@@ -43,8 +43,8 @@ const SecondHFlatList = () => {
     }
   ];
 
-  const navigation=useNavigation();
-  const navigateToProductList=(brand_name)=>{
+  const navigation=useNavigation<any>();
+  const navigateToProductList=(brand_name:any)=>{
     navigation.navigate("ProductList",{brand_name})
   }
   const Item = ({item}:{item:any}) => (
@@ -68,7 +68,7 @@ const SecondHFlatList = () => {
          item={item}
         />
       )}
-      keyExtractor={item => item.id}  
+      keyExtractor={(item:any) => item.id}  
     />
   </View>
   )

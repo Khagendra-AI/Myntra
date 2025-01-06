@@ -1,4 +1,4 @@
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View,Platform} from 'react-native';
 import React from 'react';
 import ContinueBrowsing from '../../components/ContinueBrowsing';
 import Header from '../../components/Header';
@@ -34,13 +34,17 @@ const Home = ({navigation}: {navigation: any}) => {
       <ScrollView style={styles.container} bounces={false} showsVerticalScrollIndicator={false}>
         <FirstHFlatList />
         <SecondHFlatList />
+        {Platform.OS=='ios' ?
+        <Banner adData={data} /> 
+        : null
+        }
         {/* <ProductList/> */}
         {/* <Banner adData={data} /> */}
-        <ContinueBrowsing heading={'Joyful Savings To Bag'} />
+        <ContinueBrowsing heading={'Add Joyful Savings To The Bag'} />
 
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
-        <ContinueBrowsing heading={'Major Steals For Your Spree'} />
+        <ContinueBrowsing heading={'Find Major Steals For Your Spree'} />
+        <ContinueBrowsing heading={'Searching Festiv Bonanza...?'} />
+        <ContinueBrowsing heading={'Major Discounts by Your Side Now'} />
         
       </ScrollView>
     </SafeAreaView>

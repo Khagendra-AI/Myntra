@@ -13,10 +13,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   searchbox: {
+    
     borderWidth:1,
     borderRadius: 10,
     padding: 15,
-    // width: '80%',
+    paddingRight:40,
+    width: '100%',
     backgroundColor: 'white',
   },
   touchableCancel: {},

@@ -22,24 +22,55 @@ import {
   removeWatchlist,
 } from '../../redux/config/configSlice';
 
-const ProductDetails = ({navigation}) => {
+interface Product {
+  id: string | number;
+  brand_name: string;
+  product_description: string;
+  item_name: string;
+  price: number;
+  discounted_price: number;
+  item_photo: any;  
+}
+
+interface ReduxState {
+  mainapi: {
+    products: Product[];
+    totalPrice: number;
+    totaldiscountedPrice: number;
+    watchlistdata: Product[];
+  };
+}
+
+const ProductDetails = ({navigation}: {navigation: any}) => {
   const [inbag, setinbag] = useState(false);
   const [starred, setstarred] = useState(false);
   const [mainindex, setmainindex] = useState(-1);
   const {products, totalPrice, totaldiscountedPrice, watchlistdata} =
     useSelector((store: any) => store.mainapi);
   const dispatch = useDispatch();
-  const route = useRoute();
+  const route = useRoute() as {
+    params: {
+      item: {
+        id: string;
+        price: number;
+        discounted_price: number;
+        brand_name: string;
+        item_photo: any;
+        product_description: string;
+        item_name: string;
+      };
+    };
+  };
   // console.log('route', route.params.item);
   // console.log(products[0],"what");
   const onWishListPress = () => {
     if (starred) {
-      dispatch(removeWatchlist(route.params.item.id));
+      dispatch(removeWatchlist(route?.params?.item.id));
       setstarred(false);
       // checkWatchlist();
     } else {
       // console.log('route-->', route);
-      dispatch(addWatchlist(route.params.item));
+      dispatch(addWatchlist(route?.params?.item));
       setstarred(true);
       // checkWatchlist();
     }
@@ -48,9 +79,9 @@ const ProductDetails = ({navigation}) => {
     if (inbag) {
       navigation.navigate('Bag');
     } else {
-      dispatch(addPrice(route.params.item.price));
-      dispatch(addToBag(route.params.item));
-      dispatch(adddiscountedPrice(route.params.item.discounted_price));
+      dispatch(addPrice(route?.params?.item.price));
+      dispatch(addToBag(route?.params?.item));
+      dispatch(adddiscountedPrice(route?.params?.item.discounted_price));
       setinbag(true);
     }
   };
@@ -89,37 +120,43 @@ const ProductDetails = ({navigation}) => {
   return (
     <View style={styles.container}>
       <SecondaryHeader
-        headerText={route.params.item.brand_name}
+        headerText={route?.params?.item.brand_name}
         navigateToBag={navigateToBag}
         navigateToWishList={navigateToWishList}
         onBackClick={onBackClick}
       />
-      <ScrollView style={styles.dataView}   showsVerticalScrollIndicator={false}>
-        <Image style={styles.mainImage} source={route.params.item.item_photo} />
+      <ScrollView style={styles.dataView} showsVerticalScrollIndicator={false}>
+        <Image
+          style={styles.mainImage}
+          source={route?.params?.item.item_photo}
+        />
         <View style={styles.dataTextView}>
           <Text numberOfLines={1} style={styles.brandText}>
-            {route.params.item.brand_name}{' '}
+            {route?.params?.item.brand_name}{' '}
             <Text style={styles.descriptionText}>
-              {route.params.item.product_description}
+              {route?.params?.item.product_description}
             </Text>
           </Text>
           <Text style={styles.productNameText}>
-            {route.params.item.item_name}
+            {route?.params?.item.item_name}
           </Text>
           <Text style={styles.priceText}>
             MRP{' '}
             <Text style={{textDecorationLine: 'line-through'}}>
-              ${route.params.item.price}
+              ${route?.params?.item.price}
             </Text>
             <Text style={styles.price}>
-              ${route.params.item.discounted_price}
+              ${route?.params?.item.discounted_price}
             </Text>
           </Text>
         </View>
         <Delivery />
       </ScrollView>
       <View style={styles.footerView}>
-        <TouchableOpacity style={styles.wishlistView} onPress={onWishListPress} activeOpacity={1}>
+        <TouchableOpacity
+          style={styles.wishlistView}
+          onPress={onWishListPress}
+          activeOpacity={1}>
           <Image
             source={starred ? Icon.favorite : Icon.heart}
             style={styles.heartImage}
@@ -127,7 +164,10 @@ const ProductDetails = ({navigation}) => {
           <Text style={styles.wishlistText}>WishList</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.addbagView} onPress={onBagPress} activeOpacity={1}>
+        <TouchableOpacity
+          style={styles.addbagView}
+          onPress={onBagPress}
+          activeOpacity={1}>
           <Image
             source={Icon.Bag}
             style={[styles.heartImage, {tintColor: 'white'}]}

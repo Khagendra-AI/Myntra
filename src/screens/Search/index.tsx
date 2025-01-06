@@ -66,7 +66,9 @@ const Search = ({
       <View style={styles.header}>
         <View style={{width: '80%'}}>
           <TextInput
+          maxLength={256}
             placeholder="Search for products"
+            numberOfLines={1}
             style={styles.searchbox}
             autoFocus={true}
             value={searchQuery}

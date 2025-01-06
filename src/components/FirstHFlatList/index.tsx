@@ -1,6 +1,7 @@
 import {
   FlatList,
   Image,
+  ImageProps,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -9,8 +10,7 @@ import {
 import React from 'react';
 import {Icon, Images} from '../../assets';
 import styles from './styles';
-import { useNavigation } from '@react-navigation/native';
-
+import {useNavigation} from '@react-navigation/native';
 
 const FirstHFlatList = () => {
   const data = [
@@ -51,16 +51,16 @@ const FirstHFlatList = () => {
     },
   ];
 
-  const navigation=useNavigation();
-  const navigateToProductList=(brand_name)=>{
-    navigation.navigate("ProductList",{brand_name})
-  }
+  const navigation = useNavigation<any>();
+  const navigateToProductList = (brand_name: any) => {
+    navigation.navigate('ProductList', {brand_name});
+  };
 
   const Item = ({item}: {item: any}) => (
     <TouchableOpacity
-    activeOpacity={1}
+      activeOpacity={1}
       style={styles.item}
-      onPress={()=>navigateToProductList(item.brand_name)}>
+      onPress={() => navigateToProductList(item.brand_name)}>
       <View style={styles.imageView}>
         <Image source={item.image} style={styles.image} />
       </View>
@@ -70,11 +70,11 @@ const FirstHFlatList = () => {
   return (
     <View style={styles.container}>
       <FlatList
-      showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
         horizontal
+        keyExtractor={(item: any) => item.id}
         data={data}
         renderItem={({item}) => <Item item={item} />}
-        keyExtractor={item => item.id}
       />
     </View>
   );

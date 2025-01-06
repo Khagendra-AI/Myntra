@@ -16,10 +16,13 @@ import SecondaryHeader from '../../components/SecondaryHeader';
 import {useDispatch, useSelector} from 'react-redux';
 import {addWatchlist, removeWatchlist} from '../../redux/config/configSlice';
 const ProductList = () => {
+  
   const {watchlistdata} = useSelector((store: any) => store.mainapi);
-  const navigation = useNavigation();
-  const route = useRoute();
-  const tag = route.params.brand_name;
+  const navigation = useNavigation<any>();
+  const route = useRoute() as {
+    params: any;
+  };;
+  const tag = route?.params?.brand_name;
   const handlenav = (item: any) => {
     navigation.navigate('ProductDetails', {item});
   };
@@ -98,8 +101,8 @@ const ProductList = () => {
   }, []);
   const dispatch = useDispatch();
 
-  const onWishListPress = item => {
-    if (watchlistdata.find(ele => ele.id === item.id)) {
+  const onWishListPress = (item:any) => {
+    if (watchlistdata.find((ele :any)=> ele.id === item.id)) {
       dispatch(removeWatchlist(item.id));
     } else {
       dispatch(addWatchlist(item));
@@ -125,7 +128,7 @@ const ProductList = () => {
           <Image
             style={styles.heartImage}
             source={
-              watchlistdata.find(ele => ele.id === item.id)
+              watchlistdata.find((ele :any)=> ele.id === item.id)
                 ? Icon.favorite
                 : Icon.heart
             }
@@ -149,7 +152,7 @@ const ProductList = () => {
           numColumns={2}
           data={filteredItem}
           renderItem={({item}) => <Item item={item} />}
-          keyExtractor={item => item.id}
+          keyExtractor={(item:any) => item.id}
         />
       </View>
     </>

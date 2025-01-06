@@ -7,8 +7,8 @@ import DealCard from '../DealCard';
 import { useNavigation } from '@react-navigation/native';
 
 const ContinueBrowsing = ({heading}:{heading:any}) => {
-  const navigation=useNavigation();
-  const navigateToProductList=(brand_name)=>{
+  const navigation=useNavigation<any>();
+  const navigateToProductList=(brand_name:any)=>{
     navigation.navigate("ProductList",{brand_name})
   }
   const brands = [

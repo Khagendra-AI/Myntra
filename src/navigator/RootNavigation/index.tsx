@@ -12,7 +12,7 @@ import MinisNew from '../../screens/MinisNew';
 const Tab = createBottomTabNavigator();
 
 export default function BottomNav() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   return (
     <Tab.Navigator
       screenOptions={{

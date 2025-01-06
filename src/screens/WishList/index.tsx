@@ -18,9 +18,9 @@ import {
   removeWatchlist,
 } from '../../redux/config/configSlice';
 
-const WishList = ({navigation}) => {
+const WishList = ({navigation}:{navigation:any}) => {
   const dispatch = useDispatch();
-  const handlenav = item => {
+  const handlenav = (item:any) => {
     navigation.navigate('ProductDetails', {item});
   };
   const {products, totalPrice, totaldiscountedPrice, watchlistdata} =
@@ -45,7 +45,7 @@ const WishList = ({navigation}) => {
       </TouchableOpacity>
     </TouchableOpacity>
   );
-  const movetobagPress = item => {
+  const movetobagPress = (item:any) => {
     let inbag = false;
     (products ?? [])?.map((it: any, index: any) => {
       if (it.id === item.id) {

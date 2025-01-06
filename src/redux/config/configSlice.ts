@@ -30,7 +30,7 @@ const configSlice = createSlice({
       const data: any = action.payload;
       // console.log('watchlist-->', data);
       let noteIndex=-1
-       noteIndex = state.watchlistdata.findIndex(ele => ele.id === data);
+       noteIndex = state.watchlistdata.findIndex((ele:any) => ele.id === data);
        console.log(noteIndex,"indexnote")
       if(noteIndex==-1){
       state.watchlistdata.push(data);
@@ -41,7 +41,7 @@ const configSlice = createSlice({
       const data = action.payload;
       console.log(data, 'datadatadatadatadata');
       // state.watchlistdata.pop(data);
-      const arr = state.watchlistdata.filter((ele, index) => ele.id !== data);
+      const arr = state.watchlistdata.filter((ele:any, index:any) => ele.id !== data);
       console.log(arr, 'arrarrarr');
 
       state.watchlistdata = arr;
@@ -58,7 +58,7 @@ const configSlice = createSlice({
     removeFromBag: (state: any, action) => {
       const data = action.payload;
       let arr=[]
-       arr = state.products.filter((ele, index) => index !== data);
+       arr = state.products.filter((ele:any, index:Number) => index !== data);
       state.products = arr;
       console.log(state.products, 'deleted');
     },

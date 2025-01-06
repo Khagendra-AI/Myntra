@@ -2,8 +2,14 @@ import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'r
 import React from 'react'
 import styles from './styles'
 import { Images } from '../../assets'
+interface TrendsCardProps {
+  heading: string;
+  color: string;
+  onProductsClick: () => void;
+  image: any; 
+}
 
-const TrendsCard = ({heading,color,onProductsClick,image}) => {
+const TrendsCard:React.FC<TrendsCardProps> = ({heading,color,onProductsClick,image}) => {
   return (
     <View style={[styles.container , {backgroundColor:color}]}>
       <Text style={styles.headingText}>{heading}</Text>

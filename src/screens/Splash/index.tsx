@@ -17,12 +17,6 @@ const Splash = ({navigation}: {navigation: any}) => {
   useEffect(() => {
     const timer = setTimeout(async () => {
       navigation.replace('BottomNav');
-      // if (splashtoken=="") {
-      //   navigation.replace('Tutorial');
-      // } else {
-      //   navigation.replace('Tutorial');
-
-      // }
     }, 3000);
 
     return () => clearTimeout(timer);
