@@ -94,7 +94,7 @@ const ProductDetails = ({navigation}) => {
         navigateToWishList={navigateToWishList}
         onBackClick={onBackClick}
       />
-      <ScrollView style={styles.dataView}>
+      <ScrollView style={styles.dataView}   showsVerticalScrollIndicator={false}>
         <Image style={styles.mainImage} source={route.params.item.item_photo} />
         <View style={styles.dataTextView}>
           <Text numberOfLines={1} style={styles.brandText}>
@@ -119,7 +119,7 @@ const ProductDetails = ({navigation}) => {
         <Delivery />
       </ScrollView>
       <View style={styles.footerView}>
-        <TouchableOpacity style={styles.wishlistView} onPress={onWishListPress}>
+        <TouchableOpacity style={styles.wishlistView} onPress={onWishListPress} activeOpacity={1}>
           <Image
             source={starred ? Icon.favorite : Icon.heart}
             style={styles.heartImage}
@@ -127,7 +127,7 @@ const ProductDetails = ({navigation}) => {
           <Text style={styles.wishlistText}>WishList</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.addbagView} onPress={onBagPress}>
+        <TouchableOpacity style={styles.addbagView} onPress={onBagPress} activeOpacity={1}>
           <Image
             source={Icon.Bag}
             style={[styles.heartImage, {tintColor: 'white'}]}

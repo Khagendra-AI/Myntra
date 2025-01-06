@@ -68,7 +68,7 @@ const Profile = ({navigation}: {navigation: any}) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <View style={styles.subHeader}>
-          <TouchableOpacity onPress={()=> navigation.goBack()}>
+          <TouchableOpacity onPress={()=> navigation.goBack()} activeOpacity={1}>
           <Image source={Icon.back} style={styles.backImage} />
           </TouchableOpacity>
           <Text style={styles.profileText}>Profile</Text>
@@ -83,6 +83,7 @@ const Profile = ({navigation}: {navigation: any}) => {
             </View>
             <View style={styles.whiteView}>
               <TouchableOpacity
+              activeOpacity={1}
                 style={styles.redView}
                 onPress={() => navigation.navigate('LoginPage')}>
                 <Text style={styles.loginText}>LOG IN/SIGN UP</Text>
@@ -100,11 +101,13 @@ const Profile = ({navigation}: {navigation: any}) => {
               subheading="Help regarding your recent purchase"
               image={Icon.support}
             />
+            <TouchableOpacity onPress={()=>navigation.navigate("WishList")}>
             <ProfileTile
               heading="Wishlist"
               subheading="Your most loved styles"
               image={Icon.heart}
             />
+            </TouchableOpacity>
           </View>
           <View style={styles.couponView}>
             <ProfileTile
@@ -130,41 +133,43 @@ const Profile = ({navigation}: {navigation: any}) => {
             <Text style={styles.mailText}>{userDetail.email}</Text>
           </View>
           <View style={styles.accountView}>
-            <Text style={styles.accountText}>Account Information</Text>
+            {/* <Text style={styles.accountText}>Account Information</Text> */}
             <Text style={styles.accountsubText}>
-              Find all yout profile related information
+              Find all your profile related information
             </Text>
           </View>
           <View style={styles.accountTiles}>
             <ProfileTile
               heading={'Payments & Currencies'}
-              image={Icon.camera}
+              image={Icon.secure}
               subheading="View balance and saved payment methods"
             />
             <ProfileTile
               heading={'Earn & Redeem'}
-              image={Icon.camera}
+              image={Icon.return}
               subheading="Scan coupons, view prizes and earn rewards"
             />
             <ProfileTile
               heading={'Manage Account'}
               subheading="Your account details & saved addresses"
-              image={Icon.camera}
+              image={Icon.profile}
             />
+             <TouchableOpacity onPress={()=>navigation.navigate("WishList")}>
             <ProfileTile
-              heading={'Wishlist'}
+              heading="Wishlist"
               subheading="Your most loved styles"
-              image={Icon.camera}
+              image={Icon.heart}
             />
+            </TouchableOpacity>
             <ProfileTile
               heading={'Myntra Suggests'}
               subheading="100% personalized"
-              image={Icon.camera}
+              image={Icon.home}
             />
             <ProfileTile
               heading={'Settings'}
               subheading=""
-              image={Icon.camera}
+              image={Icon.support}
             />
           </View>
           <View style={styles.FAQView}>
@@ -175,6 +180,7 @@ const Profile = ({navigation}: {navigation: any}) => {
             <Text style={styles.FAQText}>GRIEVANCE OFFICER</Text>
           </View>
           <TouchableOpacity
+          activeOpacity={1}
             style={styles.touchableLogout}
             onPress={handleLogout}>
             <Text style={styles.logoutText}>Logout</Text>

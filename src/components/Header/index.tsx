@@ -31,17 +31,17 @@ const Header = ({navigateToProfile,navigateToWishList,navigateToSearch}:{navigat
           </View>
           <View style={styles.rightUpperView}>
             <Image source={Icon.bell} style={styles.profileImage} />
-            <TouchableOpacity onPress={navigateToWishList}>
+            <TouchableOpacity onPress={navigateToWishList} activeOpacity={1}>
             <Image source={Icon.heart} style={styles.profileImage} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={navigateToProfile}>
+            <TouchableOpacity onPress={navigateToProfile} activeOpacity={1}>
             <Image source={Icon.profile} style={styles.profileImage} />
             </TouchableOpacity>
           </View>
         </View>
         <View style={styles.lowerView}>
           <View style={styles.lowerSubView}>
-            <TouchableOpacity onPress={navigateToSearch}>
+            <TouchableOpacity onPress={navigateToSearch} >
               <View style={styles.touchableView}>
                 <Image source={Icon.search} style={styles.searchImage} />
                 <Text style={styles.placeholderText}>

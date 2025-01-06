@@ -18,10 +18,10 @@ const Trends = ({navigation}:{navigation:any}) => {
           <Text style={styles.shoppingText}>TRENDS</Text>
         </View>
         <View style={styles.rightHeader}>
-        <TouchableOpacity onPress={() => navigation.navigate("Search")} style={styles.searchtouch} >
+        <TouchableOpacity onPress={() => navigation.navigate("Search")} style={styles.searchtouch} activeOpacity={1}>
             <Image source={Icon.search} style={[styles.backImage,{tintColor:'black'}]} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("WishList")}>
+          <TouchableOpacity onPress={() => navigation.navigate("WishList")} activeOpacity={1}>
             <Image source={Icon.heart} style={styles.backImage} />
           </TouchableOpacity>
         </View>

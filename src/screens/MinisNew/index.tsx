@@ -56,6 +56,7 @@ const MinisNew = ({ navigation }: { navigation: any }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
+      activeOpacity={1}
         hitSlop={{ top: 17, bottom: 18, right: 39, left: 39 }}
         style={styles.backButton}
         onPress={() => handleGoBack()}
@@ -64,6 +65,7 @@ const MinisNew = ({ navigation }: { navigation: any }) => {
       </TouchableOpacity>
 
       <FlatList
+      bounces={false}
         data={videos}
         keyExtractor={(_, index) => index.toString()}
         onScroll={handleScroll}
@@ -89,7 +91,7 @@ const MinisNew = ({ navigation }: { navigation: any }) => {
               style={styles.video}
               paused={selectedIndex !== index}
               source={item.video}
-              resizeMode="cover"
+              resizeMode="stretch"
               repeat
             />
 
@@ -104,6 +106,7 @@ const MinisNew = ({ navigation }: { navigation: any }) => {
 
             <View style={styles.optionsView}>
               <TouchableOpacity
+              activeOpacity={1}
                 style={styles.touchableoptions}
                 onPress={() => handleHeartPress(index)}
               >

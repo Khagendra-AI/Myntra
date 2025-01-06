@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
 import styles from './styles';  
+import auth, { firebase } from '@react-native-firebase/auth';
 
 const ForgotPassword = ({ navigation }: any) => {
   const [email, setEmail] = useState('');
@@ -16,14 +17,14 @@ const ForgotPassword = ({ navigation }: any) => {
   };
 
   const handleResetPassword = async () => {
-    // try {
-    //   await auth().sendPasswordResetEmail(email);
-    //   Alert.alert('Success', 'Password reset email has been sent!');
-    //   navigation.navigate('LoginPage');  
-    // } catch (error) {
-    //   console.error('Error sending password reset email:', error);
-    //   Alert.alert('Error', 'Failed to send password reset email. Please try again.');
-    // }
+    try {
+      await auth().sendPasswordResetEmail(email);
+      Alert.alert('Success', 'Password reset email has been sent!');
+      navigation.navigate('LoginPage');  
+    } catch (error) {
+      console.error('Error sending password reset email:', error);
+      Alert.alert('Error', 'Failed to send password reset email. Please try again.');
+    }
   };
 
   return (

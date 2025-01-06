@@ -31,7 +31,7 @@ const Home = ({navigation}: {navigation: any}) => {
         navigateToProfile={navigateToProfile}
         navigateToWishList={navigateToWishList}
       />
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} bounces={false} showsVerticalScrollIndicator={false}>
         <FirstHFlatList />
         <SecondHFlatList />
         {/* <ProductList/> */}

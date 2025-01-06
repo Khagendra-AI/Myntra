@@ -58,6 +58,7 @@ const FirstHFlatList = () => {
 
   const Item = ({item}: {item: any}) => (
     <TouchableOpacity
+    activeOpacity={1}
       style={styles.item}
       onPress={()=>navigateToProductList(item.brand_name)}>
       <View style={styles.imageView}>

@@ -38,6 +38,7 @@ const Minis = ({navigation}: {navigation: any}) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
+      activeOpacity={1}
         style={styles.backButton}
         onPress={() => handleGoBack()}>
         <Image source={Icon.back} style={styles.backArrowIcon} />

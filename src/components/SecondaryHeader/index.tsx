@@ -7,7 +7,7 @@ const SecondaryHeader = ({headerText,navigateToWishList,navigateToBag,onBackClic
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.leftView}>
-      <TouchableOpacity onPress={onBackClick}>
+      <TouchableOpacity onPress={onBackClick} activeOpacity={1}>
       <Image
       style={styles.backImage}
       source={Icon.back}
@@ -27,13 +27,13 @@ const SecondaryHeader = ({headerText,navigateToWishList,navigateToBag,onBackClic
       source={Icon.share}
       style={styles.backImage}
       />
-      <TouchableOpacity onPress={navigateToWishList}>
+      <TouchableOpacity onPress={navigateToWishList} activeOpacity={1}>
       <Image
       source={Icon.heart}
       style={styles.backImage}
       />
       </TouchableOpacity>
-      <TouchableOpacity onPress={navigateToBag}>
+      <TouchableOpacity onPress={navigateToBag} activeOpacity={1}>
       <Image
       source={Icon.Bag}
       style={styles.backImage}

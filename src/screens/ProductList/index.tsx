@@ -13,11 +13,14 @@ import data from '../../../data';
 import Header from '../../components/Header';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import SecondaryHeader from '../../components/SecondaryHeader';
+import {useDispatch, useSelector} from 'react-redux';
+import {addWatchlist, removeWatchlist} from '../../redux/config/configSlice';
 const ProductList = () => {
+  const {watchlistdata} = useSelector((store: any) => store.mainapi);
   const navigation = useNavigation();
   const route = useRoute();
   const tag = route.params.brand_name;
-  const handlenav = (item:any) => {
+  const handlenav = (item: any) => {
     navigation.navigate('ProductDetails', {item});
   };
   const navigateToWishList = () => {
@@ -33,7 +36,7 @@ const ProductList = () => {
   const [filteredItem, setFilteredItem] = useState([]);
 
   const fil = () => {
-    let filtered:any = [];
+    let filtered: any = [];
     if (tag === 'SHIRTS') {
       filtered = data.filter(
         item => item.cat.toLowerCase() === tag.toLowerCase(),
@@ -93,9 +96,21 @@ const ProductList = () => {
   useEffect(() => {
     fil();
   }, []);
+  const dispatch = useDispatch();
+
+  const onWishListPress = item => {
+    if (watchlistdata.find(ele => ele.id === item.id)) {
+      dispatch(removeWatchlist(item.id));
+    } else {
+      dispatch(addWatchlist(item));
+    }
+  };
 
   const Item = ({item}: {item: any}) => (
-    <TouchableOpacity style={styles.item} onPress={() => handlenav(item)}>
+    <TouchableOpacity
+      style={styles.item}
+      onPress={() => handlenav(item)}
+      activeOpacity={1}>
       <Image source={item.item_photo} style={styles.image} />
       <View style={styles.infoView}>
         <View>
@@ -106,8 +121,15 @@ const ProductList = () => {
             <Text style={styles.price}>${item.discounted_price}</Text>
           </View>
         </View>
-        <TouchableOpacity onPress={() => console.log(item.id, 'idd heart')}>
-          <Image style={styles.heartImage} source={Icon.heart} />
+        <TouchableOpacity onPress={() => onWishListPress(item)}>
+          <Image
+            style={styles.heartImage}
+            source={
+              watchlistdata.find(ele => ele.id === item.id)
+                ? Icon.favorite
+                : Icon.heart
+            }
+          />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>
@@ -123,6 +145,7 @@ const ProductList = () => {
       <View style={styles.container}>
         <FlatList
           bounces={false}
+          showsVerticalScrollIndicator={false}
           numColumns={2}
           data={filteredItem}
           renderItem={({item}) => <Item item={item} />}

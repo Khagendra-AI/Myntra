@@ -51,7 +51,7 @@ const ContinueBrowsing = ({heading}:{heading:any}) => {
   ];
   const renderItem = ({item,}: {item: any}) => {
     return (
-      <TouchableOpacity onPress={()=>navigateToProductList(item.brand_name)}>
+      <TouchableOpacity onPress={()=>navigateToProductList(item.brand_name) }activeOpacity={1}>
      <DealCard bgimage={item.image} logoimage={item.logoimage} topText={item.topText} midText={item.midText} botText={item.botText}/>
      </TouchableOpacity>
     );
@@ -67,6 +67,7 @@ const ContinueBrowsing = ({heading}:{heading:any}) => {
         </View>
       </View>
       <FlatList
+      showsHorizontalScrollIndicator={false}
         horizontal
         bounces={false}
         data={brands}

@@ -32,6 +32,7 @@ const Bag = ({navigation}) => {
   // console.log(token, 'rd');
   const renderItem = ({item, index}: {item: any; index: any}) => (
     <BagCard
+    item={item}
       image={item.item_photo}
       itemText={item.item_name}
       price={item.price}
@@ -52,7 +53,7 @@ const Bag = ({navigation}) => {
       key: 'rzp_test_GnpMgYfbVsmYuV',
       amount: amount,
       name: userDetail.name,
-      order_id: '',//Replace this with an order_id created using Orders API.
+      order_id: '',
       prefill: {
         email: 'gaurav.kumar@example.com',
         contact: 'userDetail.phone',
@@ -77,13 +78,13 @@ const Bag = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <View style={styles.leftHeader}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={1}>
             <Image source={Icon.back} style={styles.backImage} />
           </TouchableOpacity>
           <Text style={styles.shoppingText}>SHOPPING BAG</Text>
         </View>
         <View style={styles.rightHeader}>
-          <TouchableOpacity onPress={() => navigation.navigate('WishList')}>
+          <TouchableOpacity onPress={() => navigation.navigate('WishList')} activeOpacity={1}>
             <Image source={Icon.heart} style={styles.backImage} />
           </TouchableOpacity>
         </View>
@@ -98,7 +99,7 @@ const Bag = ({navigation}) => {
         </View>
       ) : (
         <View style={styles.scrollStyle}>
-        <ScrollView style={styles.flatlist} >
+        <ScrollView style={styles.flatlist}  bounces={false} showsVerticalScrollIndicator={false} >
           <FlatList
             bounces={false}
             data={products}
@@ -108,7 +109,7 @@ const Bag = ({navigation}) => {
           <PriceDetails />
           
         </ScrollView>
-        <TouchableOpacity style={styles.footer} onPress={onPaynowPress}>
+        <TouchableOpacity style={styles.footer} onPress={onPaynowPress} activeOpacity={1}>
           <Text style={styles.placeorderText}>PLACE ORDER</Text>
         </TouchableOpacity>
         </View>

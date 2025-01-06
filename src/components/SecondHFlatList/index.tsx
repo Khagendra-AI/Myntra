@@ -50,7 +50,7 @@ const SecondHFlatList = () => {
   const Item = ({item}:{item:any}) => (
     <TouchableOpacity
       style={styles.item}
-      onPress={()=>navigateToProductList(item.brand_name)}>
+      onPress={()=>navigateToProductList(item.brand_name)} activeOpacity={1}>
         <View style={styles.imageView}>
       <Image source={item.image} style={styles.image} />
       </View>
