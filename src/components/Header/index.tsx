@@ -43,7 +43,7 @@ const Header = ({navigateToProfile,navigateToWishList,navigateToSearch}:{navigat
           <View style={styles.lowerSubView}>
             <TouchableOpacity onPress={navigateToSearch} >
               <View style={styles.touchableView}>
-                <Image source={Icon.search} style={styles.searchImage} />
+                <Image source={Icon.search} style={[styles.searchImage ,{tintColor:'black'}]} />
                 <Text style={styles.placeholderText}>
                   Search for brands and products
                 </Text>

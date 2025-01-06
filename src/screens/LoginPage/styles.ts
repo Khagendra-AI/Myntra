@@ -17,8 +17,9 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   inputContainer: {
+    marginHorizontal:15,
     backgroundColor: '#34495E',  
-    borderRadius: 12,
+    borderRadius: 15,
     marginVertical: 10,
     paddingHorizontal: 15,
     height: 55,
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#2980B9',  
-    borderRadius: 10,
+    borderRadius: 15,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',

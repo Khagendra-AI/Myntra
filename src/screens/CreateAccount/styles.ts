@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#2980B9', 
-    borderRadius: 10,
+    borderRadius: 15,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     margin: 18,
     borderColor: '#2980B9',  
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: 15,
     padding: 10,
   },
   errorText: {
