@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSCameraUsageDescription</key>
+<string>We need access to your camera to let you take photos.</string>
 	<key>CFBundleDisplayName</key>
 	<string>Myntra</string>
 	<key>CFBundleExecutable</key>

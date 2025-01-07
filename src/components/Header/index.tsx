@@ -5,11 +5,16 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles';
 import {Icon} from '../../assets';
+import AudioRecordingModal from '../AudioRecording';
 
-const Header = ({navigateToProfile,navigateToWishList,navigateToSearch}:{navigateToProfile:any,navigateToWishList:any,navigateToSearch:any}) => {
+const Header = ({handleOpenCamera,navigateToProfile,navigateToWishList,navigateToSearch}:{handleOpenCamera:any,navigateToProfile:any,navigateToWishList:any,navigateToSearch:any}) => {
+  const [isModalVisible, setModalVisible] = useState(false);
+  const toggleModal = () => {
+    setModalVisible(!isModalVisible);
+  };
   return (
     
       <View style={styles.container}>
@@ -51,15 +56,18 @@ const Header = ({navigateToProfile,navigateToWishList,navigateToSearch}:{navigat
             </TouchableOpacity>
 
             <View style={styles.searchBaricons}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={handleOpenCamera}>
                 <Image
                   source={Icon.camera}
                   style={[styles.textInputIcons, {marginRight: 20}]}
                 />
               </TouchableOpacity>
               <TouchableOpacity>
+              {/* <TouchableOpacity onPress={toggleModal}> */}
                 <Image source={Icon.microphone} style={styles.textInputIcons} />
               </TouchableOpacity>
+              <AudioRecordingModal isVisible={isModalVisible} onClose={toggleModal} />
+
             </View>
           </View>
         </View>
